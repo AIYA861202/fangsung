@@ -1,0 +1,110 @@
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$carmine: #A44A3F;
+$crayola: #ffd259;
+$amazon:  #4A7C59;
+$bluegreen:#A6ECE0;
+body{
+    margin: 0;
+    padding: 0;
+    ::selection {
+        background: $bluegreen;
+        color: $amazon;
+    }
+}
+.btn{
+    width: 150px;
+    letter-spacing: 10px;
+    border-radius: 50%;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Noto Sans TC', sans-serif;
+    color: $crayola;
+    letter-spacing: 1rem;
+    text-align: center;
+}
+p, ol, ul, li{
+    font-family: 'Noto Serif TC', serif;
+    color: $gray-700;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    line-height: 2rem;
+}
+.lead{
+    color: $gray-600;
+    padding: 40px 0px;
+}
+.navbar-brand{
+    width: 15%;
+    @media screen and (max-width:480px) { 
+        width: 50%;
+    }
+    @media screen and (min-width: 520px) and (max-width:768px) { 
+        width: 20%;
+    }
+    @media screen and (width:1024px) { 
+        width: 20%;
+    }
+}
+#navbarNavDropdown{
+    padding-left: 600px;
+    @media screen and (max-width:480px) { 
+        padding-left: 0;
+    }
+    @media screen and (min-width:480px) and (max-width:768px) { 
+        padding-left: 50px;
+    }
+    @media screen and (width:1024px) { 
+        padding-left: 250px;
+    }
+    .nav-item{
+        padding: 0px 10px;
+        &:hover{
+            background-color: darken($crayola, 15%);
+            transition: 0.5s;
+        }
+        @media screen and (min-width:480px) and (max-width:768px) { 
+            padding: 0px;
+        }
+        @media screen and (width:1024px) { 
+            padding: 0px;
+        }
+        .nav-link{
+            &:hover{
+                color: $white;
+            }
+            @media screen and (max-width:480px) { 
+                padding-left: 40%;
+            }
+        }
+    }
+}
+.banner{
+    padding: 30px 0px;
+    background-color: #fff;
+}
+img{
+    width: 100%;
+}
+.bannerContainer{
+    width: 100%;
+}
+.row{
+    padding: 20px 0px;
+}
+.intro{
+    padding: 40px 0px;
+}
+section{
+    padding: 30px 0px;
+}
