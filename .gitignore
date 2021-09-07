@@ -39,15 +39,9 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
+/node_modules/*
 jspm_packages/
-bootstrap/
-jquery/
-popper.js/
-slick-carousel/
-dist/
-js/
-slick/
+!/node_modules/bootstrap/dist/js/bootstrap.min.js
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
