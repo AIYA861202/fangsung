@@ -80,6 +80,7 @@ $warning:       $crayola !default;
 $danger:        $carmine !default;
 $light:         $bluegreen !default;
 $dark:          $gray-800 !default;
+$normal:        $gray-500;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -310,7 +311,8 @@ $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
-$headings-margin-bottom:      $spacer / 2 !default;
+// $headings-margin-bottom:      $spacer / 2 !default;
+$headings-margin-bottom:      0rem !default;
 $headings-font-family:        null !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
@@ -841,17 +843,17 @@ $jumbotron-bg:                      $gray-200 !default;
 
 // Cards
 
-$card-spacer-y:                     .75rem !default;
-$card-spacer-x:                     1.25rem !default;
-$card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
+$card-spacer-y:                     0rem !default;
+$card-spacer-x:                     0rem !default;
+$card-border-width:                 0rem !default;
+$card-border-radius:                0rem !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-bg:                       rgba($black, .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
-$card-bg:                           $white !default;
+$card-bg:                           $gray-100 !default;
 
 $card-img-overlay-padding:          1.25rem !default;
 
