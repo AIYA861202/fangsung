@@ -41,11 +41,12 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-jquery/
-dist/
 bootstrap/
-js/
+jquery/
+popper.js/
 slick-carousel/
+dist/
+js/
 slick/
 
 # Snowpack dependency directory (https://snowpack.dev/)
