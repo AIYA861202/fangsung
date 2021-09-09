@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/AIYA861202/fangsung#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
     "slick-carousel": "^1.8.1"
   }
