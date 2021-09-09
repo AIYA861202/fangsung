@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>放送散步</title>
+    <link rel="icon" href="/title_img.ico" type="image/x-icon">
     <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="./style/fangsung.css"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
 </head>
 <body>
@@ -16,8 +16,8 @@
         <!-- 導航欄 -->
         <nav class="navbar navbar-expand-md navbar-light bg-primary">
             <!-- logo -->
-            <a class="navbar-brand" href="#">
-                <img class="logo" src="./img/logo.png" alt="臺中放送局">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="/img/logo.png" alt="臺中放送局">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,24 +25,24 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link" href="#">關於我們</a>
+                    <a class="nav-link" href="./web_page/about_us.html">關於我們</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">參觀資訊</a>
+                    <a class="nav-link" href="./web_page/visit_info.html">參觀資訊</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">最新消息</a>
+                    <a class="nav-link" href="./web_page/news.html">最新消息</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">聯絡我們</a>
+                    <a class="nav-link" href="./web_page/contact_us.html">聯絡我們</a>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         場地租借
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">場地費用</a>
-                        <a class="dropdown-item" href="#">租借申請</a>
+                        <a class="dropdown-item" href="./web_page/fee_details.html">場地費用</a>
+                        <a class="dropdown-item" href="./web_page/lease_apply.html">租借申請</a>
                     </div>
                     </li>
                 </ul>
@@ -69,9 +69,9 @@
     </section>
     <!-- 活動介紹、圖片跑馬燈 -->
     <section class="container">
-        <h2>放送活動</h2>
-        <h4>Activity</h4>
-        <hr>
+        <h2 data-aos="fade-left" data-aos-duration="1500">放送活動</h2>
+        <h4 data-aos="fade-left" data-aos-duration="1500">Activity</h4>
+        <hr data-aos="fade-left" data-aos-duration="1500">
         <div class="bannerContainer">
             <img src="./img/banner_1.jpg" alt="放市集">
             <img src="./img/banner_2.jpg" alt="織足計畫">
@@ -158,9 +158,7 @@
         </div>
     </section>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="/node_modules/jquery/dist/jquery.slim.js"></script>
     <script type="module" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/node_modules/slick-carousel/slick/slick.js"></script>
