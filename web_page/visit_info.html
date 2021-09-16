@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>放送散步</title>
     <link rel="icon" href="../title_img.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="../style/fangsung.css"/>
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
 </head>
 <body>
-    <header>
-        <!-- 導航欄 -->
+    <!-- 導航欄 -->
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-primary">
             <!-- logo -->
             <a class="navbar-brand" href="../index.html">
@@ -22,8 +20,8 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
                     <a class="nav-link" href="about_us.html">關於我們</a>
                     </li>
@@ -47,12 +45,226 @@
                     </li>
                 </ul>
                 </div>
-            </nav>
+        </nav>
     </header>
-
-    
-    <script type="module" src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- 參館資訊 -->
+    <section class="container">
+        <div class="row">
+            <div class="col-12" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <h2>參館資訊</h2>
+                <h4>Visit Info</h4>
+                <hr>
+            </div>
+        </div>
+        <div class="raw">
+            <div class="col">
+                <ul class="nav nav-tabs justify-content-center" id="myTab">
+                    <li class="nav-item d-lg-flex d-md-flex d-none">
+                        <!-- tab_link自訂樣式for桌機平板 -->
+                        <a href="#visit" class="nav-link tab_link" data-toggle="tab">入園須知</a>
+                    </li>
+                    <li class="nav-item d-lg-flex d-md-flex d-none">
+                        <a href="#route" class="nav-link tab_link" data-toggle="tab">如何前往</a>
+                    </li>
+                    <li class="nav-item d-lg-flex d-md-flex d-none">
+                        <a href="#park" class="nav-link tab_link" data-toggle="tab">周邊停車</a>
+                    </li>
+                    <!-- tab_mobile自訂樣式，只有手機版顯示此下拉選單 -->
+                    <li class="tab_mobile nav-item dropdown d-lg-none d-md-none">
+                        <a class="dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            參館資訊
+                        </a>
+                        <div class="tab_mobile_menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#visit" data-toggle="tab">入園須知</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#route" data-toggle="tab">如何前往</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#park" data-toggle="tab">周邊停車</a>
+                        </div>
+                        </li>
+                </ul>
+                <!-- 須知內容 -->
+                <div class="tab-content">
+                    <!-- 入園須知 -->
+                    <div class="tab-pane fade p-3" id="visit">
+                        <h2 class="intro">入園須知</h2>
+                        <h5>營業時間：10:00 - 18:00</h5>
+                        <h5>固定休館日：每週一、每週四</h5>
+                        <h5>其他休館日：農曆除夕－初三，颱風天依行政院人事總處公告</h5>
+                        <ol class="intro px-3">
+                            <li>
+                                本園區採免費參觀，不需購票，園區內各展覽與系列活動，將酌收費用，依實際票價與活動公告為準。
+                            </li>
+                            <li>
+                                全園區內禁止吸菸、嚼食檳榔、隨地吐痰、施放鞭炮、煙火、聚賭、酗酒、亂丟垃圾及竊取水電之行為。
+                            </li>
+                            <li>
+                                未經申請許可，不得於全園區進行宣傳牌、廣告、傳單、宣傳品之發送及問卷調查，亦不得進行其他營利與私自募款行為。
+                            </li>
+                            <li>
+                                本園區禁止騎乘腳踏車、機車、電動機車或進行滑板、蛇板、滑板車等活動。
+                            </li>
+                            <li>
+                                本園區戶外空間可攜帶寵物，惟須繫牽繩，並請共同維護環境之清潔，隨手清理寵物排泄物，另，室內空間禁止攜入寵物(除導盲犬外)。
+                            </li>
+                            <li>
+                                放送局之窗戶及其窗台皆為歷史保存之文物，請勿乘坐，非工作人員操作，請勿自行拉動門窗。
+                            </li>
+                            <li>
+                                全園區(除放送局本棟建築外，另包含衛哨亭、防空洞)嚴禁攀爬、搖晃園區內植栽。
+                            </li>
+                            <li>
+                                請勿於館內進行奔跑、嬉鬧、大聲喧嘩。
+                            </li>
+                            <li>
+                                請勿放養生物、餵食、洗滌等影響生態池之行為，並敬請共同維護園區內草皮。
+                            </li>
+                            <li>
+                                未經申請，禁止於園區內使用閃光燈攝影、空拍攝影，商業攝影之相關申請，請參閱攝影申請須知。
+                            </li>
+                            <li>
+                                園區附設停車場僅提供事前申請之「活動貴賓」、「施工廠商」、「備有身心障礙者及親子專用停車證之車輛」，如需申請，來電(04)2220-3108，以上車輛如停放超過營業時間，將依「停車資訊」公告資訊辦理。
+                            </li>
+                        </ol>
+                    </div>
+                    <!-- 如何前往 -->
+                    <div class="tab-pane fade p-3 container" id="route">
+                        <h2 class="intro">如何前往</h2>
+                        <!--row align-items-center讓col中的內容垂直置中 -->
+                        <!--row justify-content-center可讓col中的內容水平置中 -->
+                        <div class="row">
+                            <div class="col-12 col-md-3 col-lg-3 mid_title">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="col-12 col-md-9 col-lg-9 pl-5">
+                                <span>自行開車</span>
+                                <div class=" pt-3">
+                                    <h5>中投快速公路（臺63線）：</h5>
+                                    <p>
+                                    快速公路終點交流道，沿五權南路、五權路前進（約6公里）→ 育才北路右轉（約600公尺）→雙十路右轉（約50公尺）→ 電臺街左轉（約450公尺），臺中放送局就在右手邊。
+                                    </p>
+                                    <h5>中山高速公路（國道1號）：</h5>
+                                    <p>
+                                    中港交流道：沿臺灣大道前進（約5公里）→五權路左轉（約1.2公里）→ 育才北路右轉（約600公尺）→雙十路右轉（約50公尺）→電臺街左轉， 臺中放送局就在右手邊。
+                                    大雅交流道：沿中清路前進（約6公里）→ 五權路左轉→育才北路右轉（約600公尺）→雙十路右轉（約50公尺）→ 電臺街左轉（約450公尺），臺中放送局就在右手邊。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12 col-md-3 col-lg-3 mid_title">
+                                <i class="fas fa-bus-alt"></i>
+                            </div>
+                            <div class="col-12 col-md-9 col-lg-9 pl-5">
+                                <span>搭乘公車</span>
+                                <div class="pt-3">
+                                    <h5>於「臺灣體育運動大學／臺中一中」站下車，步行距離約500公尺：</h5>
+                                    <p>
+                                    臺中客運〔臺中一中站〕：41路、163路。
+                                    全航客運〔臺中一中站〕：65路。
+                                    統聯客運〔臺中一中站〕：50路、56路、59路。
+                                    阿羅哈客運〔臺中一中站〕：18路。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12 col-md-3 col-lg-3 mid_title">
+                                <i class="fas fa-subway"></i>
+                            </div>
+                            <div class="col-12 col-md-9 col-lg-9 pl-5">
+                                <span>搭乘高鐵</span>
+                                <div class="pt-3">
+                                    <h5>於「臺灣體育運動大學／臺中一中」站下車，步行距離約500公尺：</h5>
+                                    <p>
+                                    至臺中站，由6號出口，搭乘「高鐵臺中站—中國醫藥大學—臺中公園」線接駁車， 於「臺中一中站」下車，步行距離約500公尺。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- GOOGLE地圖 -->
+                        <div class="lead mt-5"><i class="fas fa-map-marker-alt"></i> 地圖資訊</div>
+                        <div class="iframe_container mt-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3640.621075456946!2d120.690663!3d24.149942!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe8bb8f06dc31275e!2z5q235Y-y5bu656-J6Ie65Lit5pS-6YCB5bGA!5e0!3m2!1szh-TW!2stw!4v1631723652846!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                    <!-- 周邊停車 -->
+                    <div class="tab-pane p-3 fade" id="park">
+                        <h2 class="intro">周邊停車</h2>
+                        <h5>周邊停車場</h5>
+                        <img src="../img/map.jpg" alt="">
+                        <h5 class="mt-5">附設停車場使用規範</h5>
+                        <p>
+                        因應促參法營運管理維護計畫，本停車場僅提供特殊需求之車輛，如：指定活動之貴賓、相關施工單位、觀展或用餐之身心障礙、親子車輛(需備有身心障礙者或親子專用停車證)，以上車輛需提前來電提出申請(04)2220-3108，若以上車輛停放超過營業時間(10:00-18:00)，館舍無法協助開門，需待隔日營業時間方可取車，其停放期間館舍不負保管責任，倘若停放超過連續三日之車輛，將請轄區派出所協助通知移車，持續未移之車輛，本館舍有權進行拖吊，以上管理辦法俾利維護園區之安全管理品質。
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- 回到頂部 -->
+    <div class="go_top container">
+        <i class="fas fa-chevron-up"></i>
+        Top
+    </div>
+    <!-- 頁尾 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- 連結回首頁 -->
+                    <a href="/index.html"><img src="/img/logo.png" alt="臺中放送局"></a>
+                    <p>
+                        一系列動靜態兼顧的活動展覽內容，</br>讓大眾從歷史建築看見臺中文化的起源。
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="title">
+                        營業時間
+                    </div>
+                    <p>
+                        上午10:00至下午18:00</br>固定休館日：每週一與每週四</br>其他休館日：農曆除夕~初三與颱風天
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="title">
+                        聯絡我們
+                    </div>
+                    <p>
+                        04-22203108</br>phiphiphi27@gmail.com</br>40444臺中市北區電臺街一號
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <div class="title">
+                        快速連結
+                    </div>
+                    <p>
+                        <a href="https://www.facebook.com/fangsungstudio/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://goo.gl/maps/hZ7VMdxvhPxYAim77"><i class="fas fa-map-marked-alt"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
+    <script type="module" src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="module" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        //小導航選項卡啟用
+        $("#myTab li:eq(0) a").tab('show');
+        //AOS套件初始
+        AOS.init();
+        //回到頁首
+        $('.go_top').on('click',function(){
+                $('html, body').animate({
+                    scrollTop: (0)
+                }, 2000)});
+    });
+    </script>
 </body>
 </html>

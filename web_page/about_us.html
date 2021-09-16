@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>放送散步</title>
     <link rel="icon" href="../title_img.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../node_modules/timelinejs-0.0.1/dist/css/timeline.css">
+    <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/fangsung.css"/>
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
 </head>
 <body>
-    <header>
-        <!-- 導航欄 -->
+    <!-- 導航欄 -->
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-primary">
             <!-- logo -->
             <a class="navbar-brand" href="../index.html">
@@ -21,8 +21,8 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
                     <a class="nav-link" href="about_us.html">關於我們</a>
                     </li>
@@ -46,210 +46,692 @@
                     </li>
                 </ul>
                 </div>
-            </nav>
+        </nav>
     </header>
+    <!-- 歷史沿革 -->
     <section class="container">
-        <h2 data-aos="fade-left" data-aos-duration="1500">歷史沿革</h2>
-        <h4 data-aos="fade-left" data-aos-duration="1500">History</h4>
-        <hr data-aos="fade-left" data-aos-duration="1500">
-            <div class="timeline-container timeline-theme-1">
-                <div class="timeline js-timeline">
-                    <div data-time="1935">
-                        <span>1935</span>
-                        <div class="lead">五月十一日正式啟用</div>
-                        <p>
-                        臺灣放送會臺中支部 - 臺中放送局，於五月十一日正式啟用，位於臺中市新高町水源地公園。受日本臺灣總督府委任，期工作重點在於：增加聽眾、輔導傳播業者、製作與發行傳播節目，同時也在臺中放送局設立收音機相談所，教授收音機收訊機的維護技術。
-                        </p>
-                    </div>
-                    <div data-time="1937">
-                        <span>1937</span>
-                        <div class="lead">增設多語言新聞</div>
-                        <p>
-                        臺灣放送協會增設閩南語、北京語及英語新聞。根據統計資料顯示：收音機裝設戶數，在一九三七年已達43,551戶；一九四三年時的裝設戶已經超過10萬餘戶。
-                        </p>
-                    </div>
-                    <div data-time="1940">
-                        <span>1940</span>
-                        <div class="lead">推出多語系播音</div>
-                        <p>
-                        為擴大對中國華南地區與東南亞國家的海外廣播及宣傳，臺灣放送協會分別推出閩南語、廣東話、北京語及英語、越南語等播音。
-                        </p>
-                    </div>
-                    <div data-time="1942">
-                        <span>1942</span>
-                        <div class="lead">十月開始實施二重放送</div>
-                        <p>
-                        臺灣放送局，自十月開始實施「二重放送」，分為日語播音的「第一放送」，收聽族群以日本人、懂日語的族群為主。和以閩南語、廣東話製播節目的「第二放送」，收聽族群以台灣人為主。第二放送於一九四四年五月一日終止播出。在二重放送開始之前，廣播節目已經開始播製以臺灣音樂為主的音樂性內容。
-                        </p>
-                    </div>
-                    <div data-time="1943">
-                        <span>1943</span>
-                        <div class="lead">啟用嘉義放送局</div>
-                        <p>
-                        時值昭和十八年，社團法人臺灣放送局啟用嘉義放送局。
-                        </p>
-                    </div>
-                    <div data-time="1944">
-                        <span>1944</span>
-                        <div class="lead">啟用花蓮放送局</div>
-                        <p>
-                        時值昭和十九年，社團法人臺灣放送局啟用花蓮放送局。</br>廣播收聽月費，從1元調價為1.5元
-                        </p>
-                    </div>
-                    <div data-time="1945">
-                        <span>1945</span>
-                        <div class="lead">更名為臺灣廣播電台臺中台</div>
-                        <p>
-                        十一月一日，國民黨黨營中央廣播事業處理處開始接收臺灣各地共五處的廣播電台，更名臺灣廣播電台。十二月起，臺灣廣播電台，每日播放國語教授節目，以利臺灣人學習國語。臺中放送局更名為臺灣廣播電台臺中台，接收時，總價估價值約為52,100元（幣值以戰前國幣計算）
-                        </p>
-                    </div>
-                    <div data-time="1946">
-                        <span>1946</span>
-                        <div class="lead">改組為中國廣播股份有限公司</div>
-                        <p>
-                        一月，國民政府國防最高委員會提議，參酌各國廣播公司辦法，請國民政府將中央廣播事業管理處改組為中國廣播股份有限公司。
-                        </p>
-                    </div>
-                    <div data-time="1947">
-                        <span>1947</span>
-                        <div class="lead">移交給臺灣郵電管理局</div>
-                        <p>
-                        二二八事件爆發，臺灣廣播電台職員統整群眾不滿事項，代寫廣播稿並播出。三月十日，長官公署宣布戒嚴，展開绥靖工作。陳儀透過廣播宣告解散二二八事件處理委員會與所有非法團體、查封十餘家報社，查扣反動刊物。七月一日,臺灣省政府通告臺灣廣播電台，將廣播事業移交給臺灣郵電管理局。
-                        </p>
-                    </div>
-                    <div data-time="1948">
-                        <span>1948</span>
-                        <div class="lead">開始辦理廣播無線電收音機登記</div>
-                        <p>
-                        四月，交通部電令，開始辦理廣播無線電收音機登記。費用為初期每季應繳臺幣10元，後改為每年繳交新台幣30元。
-                        </p>
-                    </div>
-                    <div data-time="1949">
-                        <span>1948</span>
-                        <div class="lead">移交予中國廣播公司</div>
-                        <p>
-                        五月二十日，國民政府發布戒嚴令。十一月底，各地電信局開始嚴肅執行今登記工作。十二月，原中央廣播事業管理處英文簡稱「CBA」廢止，改定為「BCC」（可參見臺中放送局二樓陽台的金屬裝飾）。同月，中華民國中央政府遷臺，臺中放送局之臺灣電台臺中台移交中國廣播公司，名稱亦改為中國廣播公司臺中廣播電，簡稱中廣臺中台。
-                        </p>
-                    </div>
-                    <div data-time="1950">
-                        <span>1950</span>
-                        <div class="lead">開始辦理廣播無線電收聽執照</div>
-                        <p>
-                        為禁止收聽匪俄廣播，政府規定：所有收音機使用者都應向電信局申請登記並請領執照，電信局可隨時派員檢查；無使用執照的收音機將立刻被查封沒收。</br>執照規費，初期為新台幣10元/季，後改為新台幣30元/年。
-                        </p>
-                    </div>
-                    <div data-time="1965">
-                        <span>1965</span>
-                        <div class="lead">廣告託播業務</div>
-                        <p>
-                        自七月一日起，中國廣播公司國內業務，開始受理廣告託播業務。
-                        </p>
-                    </div>
-                    <div data-time="1968">
-                        <span>1968</span>
-                        <div class="lead">更名中廣臺灣台</div>
-                        <p>
-                        中廣調頻廣播系統正式營運,突破過去全以調幅播音的界限,將臺灣廣播待入調頻立體聲的新紀元。 同年八月一日,中國廣播公司將中廣臺中台再度更名為中廣臺灣台。
-                        </p>
-                    </div>
-                    <div data-time="1987">
-                        <span>1987</span>
-                        <div class="lead">調幅立體廣播</div>
-                        <p>
-                        中國廣播公司首先推出調幅立體廣播節目。
-                        </p>
-                    </div>
-                    <div data-time="1998">
-                        <span>1998</span>
-                        <div class="lead">改為工務局拆除大隊辦公室</div>
-                        <p>
-                        中廣臺灣台搬遷，將臺中放送局的土地及建築物換給台中市政府。後工務局拆除大隊進駐，台中放送局改為工務局拆除大隊辦公室。同年，中國廣播公司各頻道節目陸續兼以衛星與微波傳輸至全國各地，並率先研發國內數位廣播革新方案。
-                        </p>
-                    </div>
-                    <div data-time="1999">
-                        <span>1999</span>
-                        <div class="lead">九二一建築受損</div>
-                        <p>
-                        九月二十一日地震搖撼全臺灣，導致建築物受損。因南投縣中寮鄉的中寮超高壓變電所、高壓電塔毀損，造成全臺灣停電。在電力中斷的情況下，所有資訊溝通多仰賴廣播傳遞。
-                        </p>
-                    </div>
-                    <div data-time="2002">
-                        <span>2002</span>
-                        <div class="lead">公告列歷史建築</div>
-                        <p>
-                        經台中市政府公告列為歷史建築，並申請行政院文化建設委員會補助，委請陳柏年建築師加以修繕。
-                        </p>
-                    </div>
-                    <div data-time="2003">
-                        <span>2003</span>
-                        <div class="lead">委託建築師整建</div>
-                        <p>
-                        臺中市政府工務局拆遷大隊遷出，臺中放送局之建築物委託陳柏年建築師整建修復。
-                        </p>
-                    </div>
-                    <div data-time="2005">
-                        <span>2005</span>
-                        <div class="lead">大千廣播電台取得委託營運</div>
-                        <p>
-                        一月二十七日，臺中市文化局辦理臺中放送局委外招標，由大千廣播電台取得委託營運。大千廣播電台將臺中放送局規畫為廣播文物館，除了陳設大千電台董事長賴茂州先生珍藏的骨董留聲機、收音機和播音設備外，更將規劃許許多多具歷史、文化內涵的主題展演。
-                        </p>
-                    </div>
-                    <div data-time="2010">
-                        <span>2010</span>
-                        <div class="lead">永進木器廠取得委託營運</div>
-                        <p>
-                        臺中文化局辦理臺中放送局委託經營管理（第二期），由永進木器廠取得委託營運。
-                        </p>
-                    </div>
-                    <div data-time="2015">
-                        <span>2015</span>
-                        <div class="lead">文創中心取得委託營運</div>
-                        <p>
-                        臺中市政府文化局辦理歷史建築臺中放送局委託營運移轉案，由@STUDIO文創中心取得委託營運。
-                        </p>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <section class="container">
-        <h2 data-aos="fade-left" data-aos-duration="1500">建築特色</h2>
-        <h4 data-aos="fade-left" data-aos-duration="1500">Features</h4>
-        <hr data-aos="fade-left" data-aos-duration="1500">
+        <!-- 插入AOS動畫一定要加入row與col，即使是block屬性的內容。 -->
         <div class="row">
-            <div class="col-lg-4">
-                <img src="../img/us_1.jpg" alt="">
+            <div class="col-12" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <h2>歷史沿革</h2>
+                <h4>History</h4>
+                <hr>
             </div>
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4"></div>
+        </div>
+        <div class="container year">
+            <div class="row">
+                <div class="col-12">
+                    <ul>
+                        <div class="row">
+                        <li id="btn_1935" class="col-lg-1 col-md-2 year"
+                            data-placement="top" title="點選看事件">1935</li>
+                        <li id="btn_1937" class="col-lg-1 col-md-2 year">1937</li>
+                        <li id="btn_1940" class="col-lg-1 col-md-2 year">1940</li>
+                        <li id="btn_1942" class="col-lg-1 col-md-2 year">1942</li>
+                        <li id="btn_1943" class="col-lg-1 col-md-2 year">1943</li>
+                        <li id="btn_1944" class="col-lg-1 col-md-2 year">1944</li>
+                        <li id="btn_1945" class="col-lg-1 col-md-2 year">1945</li>
+                        <li id="btn_1946" class="col-lg-1 col-md-2 year">1946</li>
+                        <li id="btn_1947" class="col-lg-1 col-md-2 year">1947</li>
+                        <li id="btn_1948" class="col-lg-1 col-md-2 year">1948</li>
+                        <li id="btn_1949" class="col-lg-1 col-md-2 year">1949</li>
+                        <li id="btn_1950" class="col-lg-1 col-md-2 year">1950</li>
+                        <li id="btn_1965" class="col-lg-1 col-md-2 year">1965</li>
+                        <li id="btn_1968" class="col-lg-1 col-md-2 year">1968</li>
+                        <li id="btn_1987" class="col-lg-1 col-md-2 year">1987</li>
+                        <li id="btn_1998" class="col-lg-1 col-md-2 year">1998</li>
+                        <li id="btn_1999" class="col-lg-1 col-md-2 year">1999</li>
+                        <li id="btn_2002" class="col-lg-1 col-md-2 year">2002</li>
+                        <li id="btn_2003" class="col-lg-1 col-md-2 year">2003</li>
+                        <li id="btn_2005" class="col-lg-1 col-md-2 year">2005</li>
+                        <li id="btn_2010" class="col-lg-1 col-md-2 year">2010</li>
+                        <li id="btn_2015" class="col-lg-1 col-md-2 year">2015</li>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 分界 -->
+        <div class="container">
+            <div class="row">
+                <div id="info_1935" class="col-12" >
+                    <span>1935</span>
+                    <div class="lead">五月十一日正式啟用</div>
+                    <p>
+                    臺灣放送會臺中支部 - 臺中放送局，於五月十一日正式啟用，位於臺中市新高町水源地公園。受日本臺灣總督府委任，期工作重點在於：增加聽眾、輔導傳播業者、製作與發行傳播節目，同時也在臺中放送局設立收音機相談所，教授收音機收訊機的維護技術。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1937" class="col-12" >
+                    <span>1937</span>
+                    <div class="lead">增設多語言新聞</div>
+                    <p>
+                    臺灣放送協會增設閩南語、北京語及英語新聞。根據統計資料顯示：收音機裝設戶數，在一九三七年已達43,551戶；一九四三年時的裝設戶已經超過10萬餘戶。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1940" class="col-12" >
+                    <span>1940</span>
+                    <div class="lead">推出多語系播音</div>
+                    <p>
+                    為擴大對中國華南地區與東南亞國家的海外廣播及宣傳，臺灣放送協會分別推出閩南語、廣東話、北京語及英語、越南語等播音。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1942" class="col-12" >
+                    <span>1942</span>
+                    <div class="lead">十月開始實施二重放送</div>
+                    <p>
+                    臺灣放送局，自十月開始實施「二重放送」，分為日語播音的「第一放送」，收聽族群以日本人、懂日語的族群為主。和以閩南語、廣東話製播節目的「第二放送」，收聽族群以台灣人為主。第二放送於一九四四年五月一日終止播出。在二重放送開始之前，廣播節目已經開始播製以臺灣音樂為主的音樂性內容。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1943" class="col-12" >
+                    <span>1943</span>
+                    <div class="lead">啟用嘉義放送局</div>
+                    <p>
+                    時值昭和十八年，社團法人臺灣放送局啟用嘉義放送局。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1944" class="col-12" >
+                    <span>1944</span>
+                    <div class="lead">啟用花蓮放送局</div>
+                    <p>
+                    時值昭和十九年，社團法人臺灣放送局啟用花蓮放送局。</br>廣播收聽月費，從1元調價為1.5元
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1945" class="col-12" >
+                    <span>1945</span>
+                    <div class="lead">更名為臺灣廣播電台臺中台</div>
+                    <p>
+                    十一月一日，國民黨黨營中央廣播事業處理處開始接收臺灣各地共五處的廣播電台，更名臺灣廣播電台。十二月起，臺灣廣播電台，每日播放國語教授節目，以利臺灣人學習國語。臺中放送局更名為臺灣廣播電台臺中台，接收時，總價估價值約為52,100元（幣值以戰前國幣計算）
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1946" class="col-12" >
+                    <span>1946</span>
+                    <div class="lead">改組為中國廣播股份有限公司</div>
+                    <p>
+                    一月，國民政府國防最高委員會提議，參酌各國廣播公司辦法，請國民政府將中央廣播事業管理處改組為中國廣播股份有限公司。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1947" class="col-12" >
+                    <span>1947</span>
+                    <div class="lead">移交給臺灣郵電管理局</div>
+                    <p>
+                    二二八事件爆發，臺灣廣播電台職員統整群眾不滿事項，代寫廣播稿並播出。三月十日，長官公署宣布戒嚴，展開绥靖工作。陳儀透過廣播宣告解散二二八事件處理委員會與所有非法團體、查封十餘家報社，查扣反動刊物。七月一日,臺灣省政府通告臺灣廣播電台，將廣播事業移交給臺灣郵電管理局。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1948" class="col-12" >
+                    <span>1948</span>
+                    <div class="lead">開始辦理廣播無線電收音機登記</div>
+                    <p>
+                    四月，交通部電令，開始辦理廣播無線電收音機登記。費用為初期每季應繳臺幣10元，後改為每年繳交新台幣30元。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1949" class="col-12" >
+                    <span>1949</span>
+                    <div class="lead">移交予中國廣播公司</div>
+                    <p>
+                    五月二十日，國民政府發布戒嚴令。十一月底，各地電信局開始嚴肅執行今登記工作。十二月，原中央廣播事業管理處英文簡稱「CBA」廢止，改定為「BCC」（可參見臺中放送局二樓陽台的金屬裝飾）。同月，中華民國中央政府遷臺，臺中放送局之臺灣電台臺中台移交中國廣播公司，名稱亦改為中國廣播公司臺中廣播電，簡稱中廣臺中台。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1950" class="col-12" >
+                    <span>1950</span>
+                    <div class="lead">開始辦理廣播無線電收聽執照</div>
+                    <p>
+                    為禁止收聽匪俄廣播，政府規定：所有收音機使用者都應向電信局申請登記並請領執照，電信局可隨時派員檢查；無使用執照的收音機將立刻被查封沒收。</br>執照規費，初期為新台幣10元/季，後改為新台幣30元/年。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1965" class="col-12" >
+                    <span>1965</span>
+                    <div class="lead">廣告託播業務</div>
+                    <p>
+                    自七月一日起，中國廣播公司國內業務，開始受理廣告託播業務。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1968" class="col-12" >
+                    <span>1968</span>
+                    <div class="lead">更名中廣臺灣台</div>
+                    <p>
+                    中廣調頻廣播系統正式營運,突破過去全以調幅播音的界限,將臺灣廣播待入調頻立體聲的新紀元。 同年八月一日,中國廣播公司將中廣臺中台再度更名為中廣臺灣台。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1987" class="col-12" >
+                    <span>1987</span>
+                    <div class="lead">調幅立體廣播</div>
+                    <p>
+                    中國廣播公司首先推出調幅立體廣播節目。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1998" class="col-12" >
+                    <span>1998</span>
+                    <div class="lead">改為工務局拆除大隊辦公室</div>
+                    <p>
+                    中廣臺灣台搬遷，將臺中放送局的土地及建築物換給台中市政府。後工務局拆除大隊進駐，台中放送局改為工務局拆除大隊辦公室。同年，中國廣播公司各頻道節目陸續兼以衛星與微波傳輸至全國各地，並率先研發國內數位廣播革新方案。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_1999" class="col-12" >
+                    <span>1999</span>
+                    <div class="lead">九二一建築受損</div>
+                    <p>
+                    九月二十一日地震搖撼全臺灣，導致建築物受損。因南投縣中寮鄉的中寮超高壓變電所、高壓電塔毀損，造成全臺灣停電。在電力中斷的情況下，所有資訊溝通多仰賴廣播傳遞。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_2002" class="col-12" >
+                    <span>2002</span>
+                    <div class="lead">公告列歷史建築</div>
+                    <p>
+                    經台中市政府公告列為歷史建築，並申請行政院文化建設委員會補助，委請陳柏年建築師加以修繕。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_2003" class="col-12" >
+                    <span>2003</span>
+                    <div class="lead">委託建築師整建</div>
+                    <p>
+                    臺中市政府工務局拆遷大隊遷出，臺中放送局之建築物委託陳柏年建築師整建修復。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_2005" class="col-12" >
+                    <span>2005</span>
+                    <div class="lead">大千廣播電台取得委託營運</div>
+                    <p>
+                    一月二十七日，臺中市文化局辦理臺中放送局委外招標，由大千廣播電台取得委託營運。大千廣播電台將臺中放送局規畫為廣播文物館，除了陳設大千電台董事長賴茂州先生珍藏的骨董留聲機、收音機和播音設備外，更將規劃許許多多具歷史、文化內涵的主題展演。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_2010" class="col-12" >
+                    <span>2010</span>
+                    <div class="lead">永進木器廠取得委託營運</div>
+                    <p>
+                    臺中文化局辦理臺中放送局委託經營管理（第二期），由永進木器廠取得委託營運。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="info_2015" class="col-12" >
+                    <span>2015</span>
+                    <div class="lead">文創中心取得委託營運</div>
+                    <p>
+                    臺中市政府文化局辦理歷史建築臺中放送局委託營運移轉案，由@STUDIO文創中心取得委託營運。
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js' integrity='sha512-Znnj7n0C0Xz1tdk6ih39WPm3kSCTZEKnX/7WaNbySW7GFbwSjO5r9/uOAGLMbgv6llI1GdghC7xdaQsFUStM1w==' crossorigin='anonymous'></script>
+    <!-- 建築特色 -->
+    <section class="container">
+        <!-- 插入AOS動畫一定要加入row與col，即使是block屬性的內容。 -->
+        <div class="row intro">
+            <div class="col-12" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <h2>建築特色</h2>
+                <h4>Features</h4>
+                <hr>
+            </div>
+        </div>
+        <div class="row intro" data-aos="fade-right" data-aos-duration="1500">
+            <div class="col-md-3 col-lg-3">
+                <img src="/img/us_1.png" alt="" style="border-radius: 50%;">
+            </div>
+            <div class="col-md-8 col-lg-8 offset-md-1 offset-lg-1"  id="intro_text_1">
+                <span>01</span>
+                <div class="lead">
+                    石燈籠
+                </div>
+                <p>
+                聽說這座石燈籠最早被發現的地點是在臺中公園，後來因故搬遷到臺中放送局現在的位置上，據推測應該是屬於當年臺中神社的。石燈籠早期是有錢人建造後奉獻給神社，目前這個石燈籠的保存相當完整，刻有「大正7年6月18日創建」、「昭和5年12月28日」……等字樣，但因為石燈籠的製造與設置的時間相距12年，且廢置的時間也已經不可考，所以可說是一盞「謎樣」的石燈籠。
+                </p>
+            </div>
+        </div>
+        <div class="row intro" data-aos="fade-right" data-aos-duration="1500">
+            <div class="col-md-2 col-lg-2">
+                <img src="/img/us_2.png" alt="" style="border-radius: 50%;">
+            </div>
+            <div class="col-md-9 col-lg-9 offset-md-1 offset-lg-1" id="intro_text_2">
+                <span>02</span>
+                <div class="lead">
+                    窗戶樣式
+                </div>
+                <p>
+                光是在臺中放送局一樓小小的150坪空間裡，就設置了68扇窗戶，而且臺中放送局不只是窗戶多，就連窗戶的樣式也很多，隨著太陽的東昇西落，臺中放送局的窗戶也映照出許多不同的風貌。推薦大家跟著陽光的足跡，和臺中放送局的窗戶合照，感受光與影的變化，這些窗戶與窗台也跟著放送局走了80年，希望大家也一同維護這重要的文化資產。
+                </p>
+            </div>
+        </div>
+        <div class="row intro" data-aos="fade-right" data-aos-duration="1500">
+            <div class="col-md-3 col-lg-3">
+                <img src="/img/us_3.png" alt="" style="border-radius: 50%;">
+            </div>
+            <div class="col-md-8 col-lg-8 offset-md-1 offset-lg-1">
+                <span>03</span>
+                <div class="lead">
+                    BBC 紋飾
+                </div>
+                <p>
+                二樓的陽臺外側，有著7個白色的紋飾，這7個紋飾除了中間三個明確地寫著「ＢＣＣ」之外，其餘4個紋飾則結合了臺中市市徽與中國廣播電臺的商標。市徽介紹：臺中市現行使用的市徽圖案是以「中」字對稱，圓形表示團結一致，是相當簡要的設計。這個市徽是日治時期大正十年（1921年）為配合臺中市役所辦公廳的落成使用，由當時的市役所（市政府） 公開徵求設計，並在2,099件參選圖稿中，經歷二次評選而產生，設計者是中村與松（時任職於臺北鐵道工務課）。
+                </p>
+            </div>
+        </div>
+        <div class="row intro" data-aos="fade-right" data-aos-duration="1500">
+            <div class="col-md-2 col-lg-2">
+                <img src="/img/us_4.png" alt="" style="border-radius: 50%;">
+            </div>
+            <div class="col-md-9 col-lg-9 offset-md-1 offset-lg-1">
+                <span>04</span>
+                <div class="lead">
+                    磁磚
+                </div>
+                <p>
+                玄關的咖啡色磁磚，是從日治時期就保留至今的，其中有幾片磁磚因為年代久遠而破損，在「921地震歷史建築修復再利用計畫」中，連這小小的磁磚也被列為修復的項目之一。為了仿製出與原始磁磚相似的新品，第一次燒製時因為光澤與型式，跟原始的不太像，所以還入窯又重新燒製了一次。重新燒製的仿製磁磚，除了玄關的咖啡色磁磚之外，還有車寄處遺跡上的綠色和淺黃色磁磚兩款。有興趣的話，不妨試著找找看，是否可以分辨出哪些是原始磁磚，哪些又是新的呢？
+                </p>
+            </div>
+        </div>
+        <div class="row intro" data-aos="fade-right" data-aos-duration="1500">
+            <div class="col-md-3 col-lg-3">
+                <img src="/img/us_5.png" alt="" style="border-radius: 50%;">
+            </div>
+            <div class="col-md-8 col-lg-8 offset-md-1 offset-lg-1">
+                <span>05</span>
+                <div class="lead">
+                    火頭磚
+                </div>
+                <p>
+                    低下頭注意觀察臺中放送局鋪設的地磚，你會發現——這些跟磚頭長得很像的地磚，並不如印象中的磚頭般，是鮮豔的紅色，而是有些偏焦黑色。這種磚的正確名稱叫做「火頭磚」，因燒製過程的溫度高於紅磚所需的攝氏960度，所以形成顏色較黑、硬度較高的磚頭。也正因為燒製的溫度較高，所以火頭磚多有變形問題，製磚師傅通常會將火頭磚兩端的變形部份敲掉，而成為質地堅硬的「花磚」。
+                </p>
+            </div>
+        </div>
+        <div class="row intro" data-aos="fade-right" data-aos-duration="1500">
+            <div class="col-md-2 col-lg-2">
+                <img src="/img/us_6.png" alt="" style="border-radius: 50%;">
+            </div>
+            <div class="col-md-9 col-lg-9 offset-md-1 offset-lg-1">
+                <span>06</span>
+                <div class="lead">
+                    衛哨亭
+                </div>
+                <p>
+                    大門左邊的小建築物－衛哨亭，是日治期間憲兵單位所遺留的警戒亭哨。衛哨亭的面積只有小小的1.96平方公尺，在廣播宣導政令的時代裡，臺中放送局衛哨站，背負著眼觀四面、耳聽八方的責任，偶爾還需要架上機槍嚴陣以待。當時，衛哨亭的基座裡設有機槍口，下方還有機槍堡，後方則有一個地道入口，可直接通往衛哨亭下方的機槍堡。經過80年的時間，目前這個地道已經封閉，且無法使用了。
+                </p>
+            </div>
+        </div>
+        <div class="row intro" data-aos="fade-right" data-aos-duration="1500">
+            <div class="col-md-3 col-lg-3">
+                <img src="/img/us_7.png" alt="" style="border-radius: 50%;">
+            </div>
+            <div class="col-md-8 col-lg-8 offset-md-1 offset-lg-1">
+                <span>07</span>
+                <div class="lead">
+                    棟札
+                </div>
+                <p>
+                    即所謂「上樑記牌」，日本人稱「棟札」，在東亞建築上是為重要的建築習俗，上面會有工程名稱與上樑時間、業主、設計者等與建築相關的資訊，這對於建物與當地歷史及文化是相當重要的史料。尤其在日本建築習俗上，在上大樑前會舉行「上棟式」，由神社神官與業主共同釘掛木牌（棟札）。臺中放送局的棟札，在「921地震歷史建築修復再利用計畫」時，於拆除二樓會客室天花板時，在屋架被發現，棟札的正面寫著：「大元尊神、五帝龍神與岡象女神」，背面則繪有代表水的「坎卦」，用意在於藉由坎卦與水神，一同庇佑這棟採用了木桁架構件的建築物。目前全台灣在日治時期建造的房子，也都看得見因應不同區域而紀錄的棟札，像是：台南知事官邸、基隆舊漁會大樓、嘉義檜意森活村等，也都能看見。
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- 回到頂部 -->
+    <div class="go_top container">
+        <i class="fas fa-chevron-up col-md-12"></i>
+        Top
+    </div>
+    <!-- 頁尾 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- 連結回首頁 -->
+                    <a href="/index.html"><img src="/img/logo.png" alt="臺中放送局"></a>
+                    <p>
+                        一系列動靜態兼顧的活動展覽內容，</br>讓大眾從歷史建築看見臺中文化的起源。
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="title">
+                        營業時間
+                    </div>
+                    <p>
+                        上午10:00至下午18:00</br>固定休館日：每週一與每週四</br>其他休館日：農曆除夕~初三與颱風天
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="title">
+                        聯絡我們
+                    </div>
+                    <p>
+                        04-22203108</br>phiphiphi27@gmail.com</br>40444臺中市北區電臺街一號
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <div class="title">
+                        快速連結
+                    </div>
+                    <p>
+                        <a href="https://www.facebook.com/fangsungstudio/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://goo.gl/maps/hZ7VMdxvhPxYAim77"><i class="fas fa-map-marked-alt"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
     <script type="module" src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/timelinejs-0.0.1/dist/js/timeline.min.js"></script>
     <script type="module" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
-
-    <script>
-    //AOS套件初始
-    AOS.init();
-    //年表控制
-    $('.js-timeline').Timeline({
-        autoplay: true,
-        pauseOnHover: true,
-        pauseOnDotsHover: true,
-    });
+    <script type="text/javascript">
     //JQ動畫
     $(document).ready(function(){
-            //banner往上浮現的動畫
-            $('.timeline-container').delay(100).animate({
-                top:'0px',
-                opacity: 1
-            },2000);
-            //三秒後往下滾動200
-            $('html, body').delay(2500).animate({
-                scrollTop: (100)
-            }, 2000);
+        //AOS套件初始
+        AOS.init();
+        //tooltip工具提示啟用
+        $('#btn_1935').tooltip('show');
+        //回到頁首
+        $('.go_top').on('click',function(){
+                $('html, body').animate({
+                    scrollTop: (0)
+                }, 2000);
+            });
+            //點選年表出現與隱藏歷史事件
+            $('#btn_1935').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1935').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1935').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1937').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1937').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1937').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1940').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1940').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1940').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1942').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1942').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1942').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1943').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1943').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1943').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1944').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1944').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1944').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1945').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1945').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1945').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1946').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1946').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1946').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1947').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1947').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1947').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1948').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1948').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1948').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1949').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1949').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1949').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1950').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1950').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1950').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1965').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1965').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1965').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1968').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1968').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1968').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1987').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1987').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1987').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1998').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1998').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1998').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_1999').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_2002, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_1999').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_1999').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_2002, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_2002').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2003, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_2002').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_2002').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2003, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_2003').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2005, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_2003').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_2003').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2005, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_2005').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2010, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_2005').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_2005').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2010, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_2010').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2015'
+                ).css({'background-color':'#fff'});
+                $('#btn_2010').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_2010').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2015'
+                ).css({'display':'none'});
+            });
+            $('#btn_2015').on('click',function(){
+                //年表按鈕樣式
+                $(
+                    '#btn_1935, #btn_1937, #btn_1940, #btn_1942, #btn_1943, #btn_1944, #btn_1945, #btn_1946, #btn_1947, #btn_1948, #btn_1949, #btn_1950, #btn_1965, #btn_1968, #btn_1987, #btn_1998, #btn_1999, #btn_2002, #btn_2003, #btn_2005, #btn_2010'
+                ).css({'background-color':'#fff'});
+                $('#btn_2015').css({'background-color':'#A6ECE0'});
+                //歷史事件
+                $('#info_2015').css({'display':'block', 'opacity':'0'}).animate({opacity:1},700);
+                $(
+                    '#info_1935, #info_1937, #info_1940, #info_1942, #info_1943, #info_1944, #info_1945, #info_1946, #info_1947, #info_1948, #info_1949, #info_1950, #info_1965, #info_1968, #info_1987, #info_1998, #info_1999, #info_2002, #info_2003, #info_2005, #info_2010'
+                ).css({'display':'none'});
+            });
         });
     </script>
     </body>
