@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>放送散步</title>
     <link rel="icon" href="../title_img.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="../style/fangsung.css"/>
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
 </head>
 <body>
-    <header>
-        <!-- 導航欄 -->
+    <!-- 導航欄 -->
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-primary">
             <!-- logo -->
             <a class="navbar-brand" href="../index.html">
@@ -22,8 +20,8 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
                     <a class="nav-link" href="about_us.html">關於我們</a>
                     </li>
@@ -47,12 +45,201 @@
                     </li>
                 </ul>
                 </div>
-            </nav>
+        </nav>
     </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-12" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <h2>聯絡我們</h2>
+                <h4>Contact Us</h4>
+                <hr>
+            </div>
+        </div>
+        <form class="needs-validation" novalidate>
+            <div class="form-row justify-content-center">
+                <div class="form-group col-sm-4 mx-3">
+                    <p><label class="col-form-label">
+                        姓名
+                    </label></p>
+                    <input type="name" name="name" class="form-control form-control-lg" required>
+                </div>
 
-    
+                <div class="form-group col-sm-4 mx-3">
+                    <p><label class="col-form-label">
+                        手機號碼
+                    </label></p>
+                    <input type="tel" name="tel" class="form-control form-control-lg" required>
+                </div>
+                
+                <div class="form-group col-sm-4 mx-3">
+                    <p><label class="col-form-label">
+                        電子信箱
+                    </label></p>
+                    <input type="email" name="email" class="form-control form-control-lg" required>
+                </div>
+
+                <div class="form-group col-sm-4 mx-3">
+                    <p><label class="col-form-label">
+                        內容種類
+                    </label></p>
+                    <div class="sel sel_floor">
+                        <select name="select-profession" id="select-profession" required>
+                            <option disabled>請選擇種類</option>
+                            <option>建議或問題</option>
+                            <option>申請市集攤位</option>
+                            <option>街頭表演相關</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-sm-4 mx-3">
+                    <p><label class="col-form-label">
+                        公司/個人
+                    </label></p>
+                    <div class="form-check-inline form-control-lg">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" checked>
+                        <label class="form-check-label">個人</label>
+                    </div>
+                    <div class="form-check-inline form-control-lg">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions">
+                        <label class="form-check-label">公司</label>
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-4 mx-3">
+                    <p><label class="col-form-label">
+                        稱謂
+                    </label></p>
+                    <div class="form-check-inline form-control-lg">
+                        <input class="form-check-input" type="radio" 
+                            name="inline" checked>
+                        <label class="form-check-label">先生</label>
+                    </div>
+                    <div class="form-check-inline form-control-lg">
+                        <input class="form-check-input" type="radio" name="inline">
+                        <label class="form-check-label">小姐</label>
+                    </div>
+                </div>
+                <div class="form-group col-sm-8">
+                    <label class="col-form-label">內容</label>
+                    <textarea class="form-control" 
+                        style="width: 100%; height: 30vh; border-radius: 0%;"
+                        placeholder="我想說..." required></textarea>
+                </div>
+            </div>
+            
+            <div class="form-group row justify-content-center">
+                <p><button class="btn btn-primary" type="submit">送出</button></p>
+            </div>
+        </form>
+    </section>
+    <!-- 回到頂部 -->
+    <div class="go_top container">
+        <i class="fas fa-chevron-up col-md-12"></i>
+        Top
+    </div>
+    <!-- 頁尾 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- 連結回首頁 -->
+                    <a href="/index.html"><img src="/img/logo.png" alt="臺中放送局"></a>
+                    <p>
+                        一系列動靜態兼顧的活動展覽內容，</br>讓大眾從歷史建築看見臺中文化的起源。
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="title">
+                        營業時間
+                    </div>
+                    <p>
+                        上午10:00至下午18:00</br>固定休館日：每週一與每週四</br>其他休館日：農曆除夕~初三與颱風天
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="title">
+                        聯絡我們
+                    </div>
+                    <p>
+                        04-22203108</br>phiphiphi27@gmail.com</br>40444臺中市北區電臺街一號
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <div class="title">
+                        快速連結
+                    </div>
+                    <p>
+                        <a href="https://www.facebook.com/fangsungstudio/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://goo.gl/maps/hZ7VMdxvhPxYAim77"><i class="fas fa-map-marked-alt"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
     <script type="module" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    (function($) {
+        $(document).ready(function(){
+            //AOS套件初始
+            AOS.init();
+            //回到頁首
+            $('.go_top').on('click',function(){
+                    $('html, body').animate({
+                        scrollTop: (0)
+                    }, 2000)});
+            //selecter
+            $('.sel').each(function() {
+            $(this).children('select').css('display', 'none');
+            
+            let $current = $(this);
+            
+            $(this).find('option').each(function(i) {
+                if (i == 0) {
+                $current.prepend($('<div>', {
+                    class: $current.attr('class').replace(/sel/g, 'sel__box')
+                }));
+                
+                let placeholder = $(this).text();
+                $current.prepend($('<p>', {
+                    class: $current.attr('class').replace(/sel/g, 'sel__placeholder'),
+                    text: placeholder,
+                    'data-placeholder': placeholder
+                }));
+                
+                return;
+                }
+                
+                $current.children('div').append($('<p>', {
+                class: $current.attr('class').replace(/sel/g, 'sel__box__options'),
+                text: $(this).text()
+                }));
+            });
+            });
+
+            // Toggle 讓 `.active` 到 `.sel`
+            $('.sel').click(function() {
+            $(this).toggleClass('active');
+            });
+
+            // Toggle 選項內容到 `.selected`
+            $('.sel__box__options').click(function() {
+                let txt = $(this).text();
+                let index = $(this).index();
+            
+            $(this).siblings('.sel__box__options').removeClass('selected');
+            $(this).addClass('selected');
+            
+            let $currentSel = $(this).closest('.sel');
+            $currentSel.children('.sel__placeholder').text(txt);
+            $currentSel.children('select').prop('selectedIndex', index + 1);
+            });
+        });
+    })(jQuery);
+    </script>
 </body>
 </html>

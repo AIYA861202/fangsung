@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../style/fangsung.css"/>
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
 </head>
-<body>
+<body style="overflow-x:hidden">
     <!-- 導航欄 -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-primary">
@@ -60,47 +60,50 @@
                 </div>
             </div>
             <div class="row">
-                <a href="" class="col-md-3 col-lg-3 col-sm-6" data-aos="fade-left" data-aos-duration="1500">
-                    <img src="/img/news_001.png" alt="">
-                    <h5>放送誌 007期</h5>
-                    <p>2019-07-24</p>
+                
+                    <a href="../web_page/news_007.html" class="col-md-4 col-lg-3 col-sm-6 mt-3"
+                        data-aos="fade-left" data-aos-duration="1500">
+                        <div class="pic"><img src="/img/news_007.jpg" alt=""></div>
+                        <h5>放送誌 007期</h5>
+                        <p>2019-07-24</p>
+                    </a>
+                
+                <a href="../web_page/news_006.html" class="col-md-4 col-lg-3 col-sm-6 mt-3" 
+                    data-aos="fade-right" data-aos-duration="1500">
+                    <div class="pic"><img src="/img/news_006.jpg" alt=""></div>
+                    <h5>放送誌 006期</h5>
+                    <p>2019-04-24</p>
                 </a>
-                <a href="" class="col-md-3 col-lg-3 col-sm-6" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="/img/news_001.png" alt="">
-                    <h5>放送誌 007期</h5>
-                    <p>2019-07-24</p>
+                <a href="../web_page/news_005.html" class="col-md-4 col-lg-3 col-sm-6 mt-3" 
+                    data-aos="fade-left" data-aos-duration="1500">
+                    <div class="pic"><img src="/img/news_005.png" alt=""></div>
+                    <h5>放送誌 005期</h5>
+                    <p>2019-01-24</p>
                 </a>
-                <a href="" class="col-md-3 col-lg-3 col-sm-6" data-aos="fade-left" data-aos-duration="1500">
-                    <img src="/img/news_001.png" alt="">
-                    <h5>放送誌 007期</h5>
-                    <p>2019-07-24</p>
+                <a href="../web_page/news_004.html" class="col-md-4 col-lg-3 col-sm-6 mt-3" 
+                    data-aos="fade-right" data-aos-duration="1500">
+                    <div class="pic"><img src="/img/news_004.png" alt=""></div>
+                    <h5>放送誌 004期</h5>
+                    <p>2018-11-24</p>
                 </a>
-                <a href="" class="col-md-3 col-lg-3 col-sm-6" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="/img/news_001.png" alt="">
-                    <h5>放送誌 007期</h5>
-                    <p>2019-07-24</p>
+                <a href="../web_page/news_003.html" class="col-md-4 col-lg-3 col-sm-6 mt-3" 
+                    data-aos="fade-left" data-aos-duration="1500">
+                    <div class="pic"><img src="/img/news_003.png" alt=""></div>
+                    <h5>放送誌 003期</h5>
+                    <p>2018-09-24</p>
                 </a>
-                <a href="" class="col-md-3 col-lg-3 col-sm-6" data-aos="fade-left" data-aos-duration="1500">
-                    <img src="/img/news_001.png" alt="">
-                    <h5>放送誌 007期</h5>
-                    <p>2019-07-24</p>
+                <a href="../web_page/news_002.html" class="col-md-4 col-lg-3 col-sm-6 mt-3" 
+                    data-aos="fade-right" data-aos-duration="1500">
+                    <div class="pic"><img src="/img/news_002.png" alt=""></div>
+                    <h5>放送誌 002期</h5>
+                    <p>2018-08-24</p>
                 </a>
-                <a href="" class="col-md-3 col-lg-3 col-sm-6" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="/img/news_001.png" alt="">
-                    <h5>放送誌 007期</h5>
-                    <p>2019-07-24</p>
+                <a href="../web_page/news_001.html" class="col-md-4 col-lg-3 col-sm-6 mt-3" 
+                    data-aos="fade-left" data-aos-duration="1500">
+                    <div class="pic"><img src="/img/news_001.png" alt=""></div>
+                    <h5>放送誌 001期</h5>
+                    <p>2018-05-24</p>
                 </a>
-                <a href="" class="col-md-3 col-lg-3 col-sm-6" data-aos="fade-left" data-aos-duration="1500">
-                    <img src="/img/news_001.png" alt="">
-                    <h5>放送誌 007期</h5>
-                    <p>2019-07-24</p>
-                </a>
-                <a href="" class="col-md-3 col-lg-3 col-sm-6" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="/img/news_001.png" alt="">
-                    <h5>放送誌 007期</h5>
-                    <p>2019-07-24</p>
-                </a>
-            </div>
         </div>
     </section>
     <!-- 回到頂部 -->
@@ -153,6 +156,7 @@
     <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
+    (function($) {
         $(document).ready(function(){
             //AOS套件啟用
             AOS.init();
@@ -163,6 +167,7 @@
                 }, 2000);
             });
         });
+    })(jQuery);
     </script>
 </body>
 </html>

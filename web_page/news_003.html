@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>放送散步</title>
     <link rel="icon" href="../title_img.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/fangsung.css"/>
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
 </head>
-<body>
+<body style="overflow-x:hidden">
     <!-- 導航欄 -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-primary">
@@ -47,7 +48,30 @@
                 </div>
         </nav>
     </header>
-
+    <!-- 放送誌 -->
+    <section>
+        <div class="container">
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <h2>最新消息</h2>
+                <h4>News</h4>
+                <hr>
+            </div>
+            <span>放送誌 003期</span>
+            <h5 class="mt-5">【封面故事】</h5>
+            <p>
+                1900年臺灣第一個都市計畫，從臺中市開始，自臺中車站為出發點，規劃出棋盤式街廓，沿著這些路徑，拓展出交通......
+            </p>
+            <h5>【內容大綱】</h5>
+            <p>
+                至今118年的時間，期間經歷「日據時期」、「國民政府」，直至今日的民主自由時代，依歷史角度而言，臺中也因為這樣，完整地發展出都市型態，然而，這片土地卻早在這之前，即有更多的人流動著。九月《放送誌》從空間說起，在古建築裡用當代營運、在新空間中沿革舊時文化，此外，在臺中還有許多在地團隊不斷努力著，讓臺中的美好、屬於臺中的風格，透過獨立精神，在國際間發光。
+            </p>
+            <div class="book_box">
+                <iframe allowfullscreen="" frameborder="0" scrolling="no" seamless="seamless" 
+                src="https://e.issuu.com/anonymous-embed.html?u=at.atstudio&d=9__003_" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+    </section>
     <!-- 回到頂部 -->
     <div class="go_top container">
         <i class="fas fa-chevron-up col-md-12"></i>
@@ -92,22 +116,23 @@
             </div>
         </div>
     </footer>
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
     <script type="module" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
-    <script>
-        (function($) {
-            $(document).ready(function(){
-            //AOS套件初始
+    <script type="text/javascript">
+    (function($) {
+        $(document).ready(function(){
+            //AOS套件啟用
             AOS.init();
             //回到頁首
             $('.go_top').on('click',function(){
-                    $('html, body').animate({
-                        scrollTop: (0)
-                    }, 2000);
-                });
-            })
+                $('html, body').animate({
+                    scrollTop: (0)
+                }, 2000);
+            });
+        });
     })(jQuery);
     </script>
 </body>

@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>放送散步</title>
     <link rel="icon" href="../title_img.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/fangsung.css"/>
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
 </head>
-<body>
+<body style="overflow-x:hidden">
     <!-- 導航欄 -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-primary">
@@ -47,7 +48,31 @@
                 </div>
         </nav>
     </header>
-
+    <!-- 放送誌 -->
+    <section>
+        <div class="container">
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <h2>最新消息</h2>
+                <h4>News</h4>
+                <hr>
+            </div>
+            <span>放送誌 006期</span>
+            <h5 class="mt-5">【封面故事】</h5>
+            <p>
+                當我們在搬家時，很容易進入斷捨離，於是，丟棄了許多東西，沒有好與壞，因為，我們可以用新的方式去記錄那些過往，都市的建造大概也是這樣，必須有許多的拆遷，但當中的故事隨著離開，也許就可能真的離我們而去，006期的《放送誌》主題便在思考『把找回後的故事留下了，那麼接下來呢？』文化因人而生，生活在臺中、熱愛臺中的朋友們，跟著本期《放送誌》閱讀臺中城市，將那些看似平凡，實際卻無比偉大的記憶讓故事放送下去。
+            </p>
+            <h5>【內容大綱】</h5>
+            <p>
+                那些我們該找回的故事：【臺中這座文化城】廖振富老師專訪、【臺中文化寶庫】劉曜華老師專訪
+                </br>特別介紹：歷史建築帝國製糖臺中營業所
+            </p>
+            <div class="book_box">
+                <iframe allowfullscreen="" frameborder="0" scrolling="no" seamless="seamless" 
+                src="https://e.issuu.com/embed.html#35329614/69352181" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+    </section>
     <!-- 回到頂部 -->
     <div class="go_top container">
         <i class="fas fa-chevron-up col-md-12"></i>
@@ -92,22 +117,23 @@
             </div>
         </div>
     </footer>
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
     <script type="module" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
-    <script>
-        (function($) {
-            $(document).ready(function(){
-            //AOS套件初始
+    <script type="text/javascript">
+    (function($) {
+        $(document).ready(function(){
+            //AOS套件啟用
             AOS.init();
             //回到頁首
             $('.go_top').on('click',function(){
-                    $('html, body').animate({
-                        scrollTop: (0)
-                    }, 2000);
-                });
-            })
+                $('html, body').animate({
+                    scrollTop: (0)
+                }, 2000);
+            });
+        });
     })(jQuery);
     </script>
 </body>

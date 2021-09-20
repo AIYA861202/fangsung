@@ -9,9 +9,7 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
-
 $fb:#3b5998;
-
 $carmine: #A44A3F;
 $crayola: #ffd259;
 $amazon:  #4A7C59;
@@ -19,8 +17,6 @@ $bluegreen:#A6ECE0;
 $Noto-Sans-TC: 'Noto Sans TC', sans-serif;
 $Noto-Serif-TC: 'Noto Serif TC', serif;
 body{
-    margin: 0;
-    padding: 0;
     ::selection {
         background: $bluegreen;
         color: $amazon;
@@ -29,7 +25,9 @@ body{
 .btn{
     width: 150px;
     letter-spacing: 5px;
-    border-radius: 50%;
+    &:active{
+        box-shadow: lighten($crayola,10%) 0px 0px 0px 5px !important;
+    }
 }
 h1, h2, h3{
     font-family: $Noto-Sans-TC;
@@ -52,7 +50,7 @@ h5{
     text-align: left;
     padding: 0.5rem 0rem;
 }
-p{
+p, label{
     font-family: $Noto-Serif-TC;
     color: $gray-700;
     font-size: 1rem;
@@ -83,15 +81,6 @@ span{
     color: $bluegreen;
     border-bottom: 10px solid $crayola;
 }
-//header
-// header{
-//     .fixed{
-//     position: fixed;
-//     z-index: 2;
-//     top: 0;
-//     box-shadow: 3px 5px 3px $gray-400;
-//     }
-// }
 .navbar-brand{
     width: 15%;
     @media screen and (max-width:576px) { 
@@ -108,21 +97,12 @@ span{
     .nav-item{
         &:hover{
             background-color: darken($crayola, 15%);
-            transition: 0.5s;
-        }
-        .nav-link{
-            &:hover{
-                color: $white;
-            }
+            transition: .5s;
         }
     }
     //讓平板與電腦用下拉選單時不會破版
     @media screen and (min-width: 576px) and (max-width:1600px) { 
         margin-right: 50px;
-    }
-    //電腦版按鈕
-    @media screen and (min-width: 768px) and (max-width:1600px) { 
-        padding: 0px 5px;
     }
 }
 .banner{
@@ -133,6 +113,7 @@ span{
 img{
     width: 100%;
 }
+//y間距
 .intro{
     padding: 40px 0px;
     @media screen and (min-width: 220px) and (max-width:576px) { 
@@ -142,6 +123,7 @@ img{
         padding: 20px 0px;
         }
 }
+//y間距
 section{
     padding: 30px 0px;
     @media screen and (min-width: 220px) and (max-width:576px) { 
@@ -389,3 +371,226 @@ footer{
         height: 100%;
     }
 }
+//最新消息放送誌hover放大
+.pic{
+    width:auto;
+    height:auto;
+    overflow:hidden;
+    img{
+        transform:scale(1,1);
+        transition: all 1s ease-out;
+        &:hover{
+            transform:scale(1.2,1.2);
+        }
+    }
+}
+//放送誌閱讀器響應式
+.book_box{
+    height: 680px;
+    @media screen and (min-width: 220px) and (max-width:576px) { 
+        height: 300px;
+        }
+    
+}
+//表單radio
+$custom-radio-size:                 28px;
+$custom-radio-border-width:         1px;
+$custom-radio-pip-color:            $crayola;
+$custom-radio-unchecked-bg:         $white;
+$custom-radio-unchecked-border:     $gray-400;
+$custom-radio-checked-bg:           mix($custom-radio-unchecked-bg, $custom-radio-pip-color, 80%);
+$custom-radio-checked-border:       $crayola;
+input[type="radio"] {
+    position: relative;
+    display: inline-block;
+    width:  26px;
+    height: 26px;
+    border-radius: 100%;
+    outline: none;
+    -webkit-appearance: none;
+    &::before {
+        position: relative;
+        top:  -$custom-radio-border-width;
+        left: -$custom-radio-border-width;
+        display: block;
+        content: '';
+        background: $custom-radio-unchecked-bg;
+        border: $custom-radio-border-width solid $custom-radio-unchecked-border;
+        border-radius: 100%;
+        width:  28px;
+        height: 28px;
+    }
+    &:checked::before {
+        background: $custom-radio-checked-bg;
+        border-color: $custom-radio-checked-border;
+    }
+    //中心點
+    &::after {
+        position: relative;
+        display: block;
+        content: '';
+        background: $crayola;
+        border-radius: 100%;
+        width:  0;
+        height: 0;
+    }
+    &:checked::after {
+        transition: all ease-in-out 1500 0;
+        top: -23px;
+        left: 5px;
+        width:  16px;
+        height: 16px;
+    }
+}
+//自動填入樣式
+input[type="name"],
+input[type="tel"], 
+input[type="email"],
+select, 
+textarea, 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-text-fill-color: $gray-700;
+    font-family: $Noto-Serif-TC !important;
+    //讓自動填寫不會有藍色背景
+    transition: background-color 5000s ease-in-out 0s;
+}
+//修改selecter樣式
+.sel {
+    font-size: .6rem;
+    display: inline-block;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    }
+    //右側的向上箭頭ICON
+    .sel::before {
+        position: absolute;
+        content: '\f063';
+        font-family: 'FontAwesome';
+        font-size: 3em;
+        color: $crayola;
+        right: 20px;
+        top: calc(50% - 0.8em);
+    }
+    //右側 向上箭頭ICON轉向下
+    .sel.active::before {
+        transform: rotateX(-180deg);
+    }
+    //初始提示文字(請選擇種類)
+    //relative值使文字擺好
+    .sel__placeholder {
+        position: relative;
+        top: 5px;
+        left: 20px;
+        display: block;
+        font-family: $Noto-Serif-TC;
+        font-size: 2em;
+        color: $gray-700;
+        padding: 0em 0em;
+        text-align: left;
+        pointer-events: none;
+        user-select: none;
+        visibility: visible;
+    }
+
+    .sel.active .sel__placeholder {
+        visibility: hidden;
+    }
+    //按下後的placeholder狀態
+    .sel__placeholder::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: attr(data-placeholder);
+        visibility: hidden;
+    }
+
+    .sel.active .sel__placeholder::before {
+        visibility: visible;
+    }
+    //下拉出的box樣式
+    .sel__box {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: -4px;
+        display: none;
+        list-style-type: none;
+        text-align: left;
+        font-size: 1em;
+        background-color: $gray-100;
+        width: calc(100% + 0px);
+        box-sizing: border-box;
+        border: 1px solid $gray-400;
+        border-radius: 10px;
+    }
+
+    .sel.active .sel__box {
+        display: block;
+        animation: fadeInUp 500ms;
+    }
+  //選項文字
+    .sel__box__options {
+        display: list-item;
+        font-family: $Noto-Serif-TC;
+        font-size: 2em;
+        color: $gray-700;
+        padding: 0.5em 1em;
+        user-select: none;
+        margin-bottom: 0px !important;
+        border-bottom: 1px solid $gray-400;
+    }
+    //勾勾
+    .sel__box__options::after {
+        content: '\f00c';
+        font-family: 'FontAwesome';
+        font-size: 1em;
+        margin-left: 10px;
+        display: none;
+        color: $amazon;
+    }
+    .sel__box__options.selected::after {
+        display: inline;
+    }
+    //選項hover樣式
+    .sel__box__options:hover {
+        background-color: $gray-200;
+    }
+
+    //SELECT外框樣式
+    .sel {
+        border: 1px solid $gray-400;
+        border-radius: 40px;
+    }
+
+    .sel_floor {
+        z-index: 3;
+    }
+
+  //動畫
+    @keyframes fadeInUp {
+        from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+        }
+
+        to {
+        opacity: 1;
+        transform: none;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+        opacity: 1;
+        }
+    
+        to {
+        opacity: 0;
+        }
+    }

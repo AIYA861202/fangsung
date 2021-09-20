@@ -50,9 +50,7 @@
     </header>
     <!-- 歷史沿革 -->
     <section class="container">
-        <!-- 插入AOS動畫一定要加入row與col，即使是block屬性的內容。 -->
-        <div class="row">
-            <div class="col-12" data-aos="fade-up"
+            <div data-aos="fade-up"
                 data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
                 <h2>歷史沿革</h2>
                 <h4>History</h4>
@@ -456,7 +454,8 @@
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
     //JQ動畫
-    $(document).ready(function(){
+    (function($) {
+        $(document).ready(function(){
         //AOS套件初始
         AOS.init();
         //tooltip工具提示啟用
@@ -733,6 +732,7 @@
                 ).css({'display':'none'});
             });
         });
+    })(jQuery);
     </script>
     </body>
 </html>

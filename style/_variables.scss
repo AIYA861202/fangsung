@@ -254,9 +254,9 @@ $border-radius-sm:            2rem !default;
 
 $rounded-pill:                50rem !default;
 
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
-$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba($bluegreen, .075) !default;
+$box-shadow:                  0 .5rem 1rem rgba($bluegreen, .15) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($bluegreen, .175) !default;
 
 $component-active-color:      $white !default;
 $component-active-bg:         theme-color("primary") !default;
@@ -404,7 +404,7 @@ $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:       .2rem !default;
-$input-btn-focus-color:       rgba($component-active-bg, .25) !default;
+$input-btn-focus-color:       rgba($component-active-bg, .7) !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
 $input-btn-padding-y-sm:      .25rem !default;
@@ -444,11 +444,11 @@ $btn-line-height-lg:          $input-btn-line-height-lg !default;
 $btn-border-width:            $input-btn-border-width !default;
 
 $btn-font-weight:             $font-weight-normal !default;
-$btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+$btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($bluegreen, .075) !default;
 $btn-focus-width:             $input-btn-focus-width !default;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
 $btn-disabled-opacity:        .65 !default;
-$btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
+$btn-active-box-shadow:       inset 0 3px 5px rgba($bluegreen, .125) !default;
 
 $btn-link-disabled-color:     $gray-600 !default;
 
@@ -575,7 +575,7 @@ $custom-checkbox-indicator-indeterminate-box-shadow:   null !default;
 $custom-checkbox-indicator-indeterminate-border-color: $custom-checkbox-indicator-indeterminate-bg !default;
 
 $custom-radio-indicator-border-radius:          50% !default;
-$custom-radio-indicator-icon-checked:           url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'><circle r='3' fill='#{$custom-control-indicator-checked-color}'/></svg>") !default;
+$custom-radio-indicator-icon-checked:           url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'><circle r='3' fill='#{$crayola}'/></svg>") !default;
 
 $custom-switch-width:                           $custom-control-indicator-size * 1.75 !default;
 $custom-switch-indicator-border-radius:         $custom-control-indicator-size / 2 !default;

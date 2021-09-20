@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>放送散步</title>
     <link rel="icon" href="../title_img.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/fangsung.css"/>
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
 </head>
-<body>
+<body style="overflow-x:hidden">
     <!-- 導航欄 -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-primary">
@@ -47,7 +48,34 @@
                 </div>
         </nav>
     </header>
-
+    <!-- 放送誌 -->
+    <section>
+        <div class="container">
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <h2>最新消息</h2>
+                <h4>News</h4>
+                <hr>
+            </div>
+            <span>放送誌 007期</span>
+            <h5 class="mt-5">【封面故事】</h5>
+            <p>
+                接續著上期「那些我們該找回的故事」，這次帶著大家跟著川流走巷道，在歷史中優游散步。
+            </p>
+            <h5>【內容大綱】</h5>
+            <p>
+                在1900年市區改正計畫，綠川截彎取直，從東北往西南方向，傳遞水源，水源地公園建構出現代化設施「上水塔」，人因為水流而聚集，年月累積之下，發酵屬於臺中市在地的文化痕跡。從水源地一路流向舊市區，這裡的民生故事、庶民生活，值得大家探究：「還有哪些人、事、物，依然深深影響著今日的生活方式呢？」
+            </p>
+            <div class="d-none">
+                <!--Facebook分享按鈕(JavaScript語法)-->
+                <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));">
+                </a>
+            </div>
+            <div class="book_box">
+                <iframe allowfullscreen="" frameborder="0" scrolling="no" seamless="seamless" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fznagnudq" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+    </section>
     <!-- 回到頂部 -->
     <div class="go_top container">
         <i class="fas fa-chevron-up col-md-12"></i>
@@ -92,22 +120,23 @@
             </div>
         </div>
     </footer>
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
     <script type="module" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
-    <script>
-        (function($) {
-            $(document).ready(function(){
-            //AOS套件初始
+    <script type="text/javascript">
+    (function($) {
+        $(document).ready(function(){
+            //AOS套件啟用
             AOS.init();
             //回到頁首
             $('.go_top').on('click',function(){
-                    $('html, body').animate({
-                        scrollTop: (0)
-                    }, 2000);
-                });
-            })
+                $('html, body').animate({
+                    scrollTop: (0)
+                }, 2000);
+            });
+        });
     })(jQuery);
     </script>
 </body>

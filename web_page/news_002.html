@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>放送散步</title>
     <link rel="icon" href="../title_img.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/fangsung.css"/>
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
 </head>
-<body>
+<body style="overflow-x:hidden">
     <!-- 導航欄 -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-primary">
@@ -47,7 +48,30 @@
                 </div>
         </nav>
     </header>
-
+    <!-- 放送誌 -->
+    <section>
+        <div class="container">
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <h2>最新消息</h2>
+                <h4>News</h4>
+                <hr>
+            </div>
+            <span>放送誌 002期</span>
+            <h5 class="mt-5">【封面故事】</h5>
+            <p>
+                現今氣候驟變、環境保護越趨惡劣，植物也越來越難存活......
+            </p>
+            <h5>【內容大綱】</h5>
+            <p>
+                摔角選手和機器人為了挽救地球，重回綠意盎然、繁花盛開的狀態，於是，便舉行一場《花卉種植大賽》，看看會是誰照顧的花長得最好、最茂盛？！因此，雙方展開沒日沒夜、拚了命地照顧自己的花朵，希望能奪下冠軍，然而，不論輸贏如何，活動最終目的－希望提醒大家要共同維護環境、愛地球啊！！！
+            </p>
+            <div class="book_box">
+                <iframe allowfullscreen="" frameborder="0" scrolling="no" seamless="seamless" 
+                src="https://e.issuu.com/anonymous-embed.html?u=at.atstudio&d=8__002_" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+    </section>
     <!-- 回到頂部 -->
     <div class="go_top container">
         <i class="fas fa-chevron-up col-md-12"></i>
@@ -92,22 +116,23 @@
             </div>
         </div>
     </footer>
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
     <script type="module" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
-    <script>
-        (function($) {
-            $(document).ready(function(){
-            //AOS套件初始
+    <script type="text/javascript">
+    (function($) {
+        $(document).ready(function(){
+            //AOS套件啟用
             AOS.init();
             //回到頁首
             $('.go_top').on('click',function(){
-                    $('html, body').animate({
-                        scrollTop: (0)
-                    }, 2000);
-                });
-            })
+                $('html, body').animate({
+                    scrollTop: (0)
+                }, 2000);
+            });
+        });
     })(jQuery);
     </script>
 </body>

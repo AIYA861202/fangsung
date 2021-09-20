@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>放送散步</title>
     <link rel="icon" href="../title_img.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/fangsung.css"/>
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
 </head>
-<body>
+<body style="overflow-x:hidden">
     <!-- 導航欄 -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-primary">
@@ -47,7 +48,30 @@
                 </div>
         </nav>
     </header>
-
+    <!-- 放送誌 -->
+    <section>
+        <div class="container">
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <h2>最新消息</h2>
+                <h4>News</h4>
+                <hr>
+            </div>
+            <span>放送誌 004期</span>
+            <h5 class="mt-5">【封面故事】</h5>
+            <p>
+                『島嶼有愛』，四面環海，這座島嶼融合了不同族群，臺灣擁有的地形面貌：高山、海洋、丘陵台地、平原，這些地形發展出來的聚落形式也各有風格，各個民俗風情落地成長，成為島嶼多元文化下的獨特面貌，人和土地有著最緊密的連結。
+            </p>
+            <h5>【內容大綱】</h5>
+            <p>
+                每個人的付出，正是出自對這片土地的愛與景仰，每個人彎腰低頭，努力耕耘，相互學習。「島嶼有愛」，愛的出發點很單純，漸進式的行動、參與、融入，於是，像一趟充實旅程，每格畫面都展現人們的熱情，不分年齡，努力耕耘、並且保護心中所愛，讓土地文化永續下去，如今，幸福地享受前人為我們寫下的美麗故事，於是，回饋所能給予的，努力地為在地美好付出，並祈求讓這段路推進得越長。
+            </p>
+            <div class="book_box">
+                <iframe allowfullscreen="" frameborder="0" scrolling="no" seamless="seamless" 
+                src="https://e.issuu.com/anonymous-embed.html?u=at.atstudio&d=11__004_" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+    </section>
     <!-- 回到頂部 -->
     <div class="go_top container">
         <i class="fas fa-chevron-up col-md-12"></i>
@@ -92,22 +116,23 @@
             </div>
         </div>
     </footer>
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
     <script type="module" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
-    <script>
-        (function($) {
-            $(document).ready(function(){
-            //AOS套件初始
+    <script type="text/javascript">
+    (function($) {
+        $(document).ready(function(){
+            //AOS套件啟用
             AOS.init();
             //回到頁首
             $('.go_top').on('click',function(){
-                    $('html, body').animate({
-                        scrollTop: (0)
-                    }, 2000);
-                });
-            })
+                $('html, body').animate({
+                    scrollTop: (0)
+                }, 2000);
+            });
+        });
     })(jQuery);
     </script>
 </body>
