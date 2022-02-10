@@ -39,7 +39,7 @@
                         場地租借
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="fee_details.html">場地費用</a>
+                        <a class="dropdown-item" href="fee_details.html">租借資訊</a>
                         <a class="dropdown-item" href="lease_apply.html">租借申請</a>
                     </div>
                     </li>
@@ -47,6 +47,208 @@
                 </div>
         </nav>
     </header>
+<!-- 租借資訊 -->
+<section class="container">
+    <div class="row">
+        <div class="col-12" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+            <h2>租借資訊</h2>
+            <h4>Rent Info</h4>
+            <hr>
+        </div>
+    </div>
+    <div class="raw">
+        <div class="col">
+            <ul class="nav nav-tabs justify-content-center" id="rentTab">
+                <li class="nav-item d-lg-flex d-md-flex d-none">
+                    <!-- tab_link自訂樣式for桌機平板 -->
+                    <a href="#place" class="nav-link active tab_link" data-toggle="tab">場地介紹</a>
+                </li>
+                <li class="nav-item d-lg-flex d-md-flex d-none">
+                    <a href="#rent" class="nav-link tab_link" data-toggle="tab">租借說明</a>
+                </li>
+                <li class="nav-item d-lg-flex d-md-flex d-none">
+                    <a href="#fee" class="nav-link tab_link" id="tooltip_switch" data-toggle="tab">費用說明</a>
+                </li>
+                <!-- tab_mobile自訂樣式，只有手機版顯示此下拉選單 -->
+                <li class="tab_mobile nav-item dropdown d-lg-none d-md-none">
+                    <a class="dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        租借資訊
+                    </a>
+                    <div class="tab_mobile_menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#place" data-toggle="tab">場地介紹</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#rent" data-toggle="tab">租借說明</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#fee" data-toggle="tab">費用說明</a>
+                    </div>
+                    </li>
+            </ul>
+            <!-- 須知內容 -->
+            <div class="tab-content">
+                <!-- 場地介紹 -->
+                <div class="tab-pane active p-3" id="place">
+                    <h2 class="intro">場地介紹</h2>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card text-center" 
+                                data-aos="flip-left" data-aos-duration="2000">
+                                <div class="card-body">
+                                    <div class="mask">
+                                        <div class="mask_color">
+                                            <div class="mask_text">
+                                                <h2>105</h2></br>21.6坪</br>展演、產品發表
+                                            </div>
+                                        </div>
+                                        <img class="card-img-top" src="/img/place_105.jpg" alt="105空間">
+                                    </div>
+                                    <h5 class="card-title">105空間</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card text-center" 
+                                data-aos="flip-left" data-aos-duration="2000">
+                                <div class="card-body">
+                                    <div class="mask">
+                                        <div class="mask_color">
+                                            <div class="mask_text">
+                                                <h2>106</h2></br>16坪</br>講座、展演空間
+                                            </div>
+                                        </div>
+                                        <img class="card-img-top" src="/img/place_106.jpg" alt="105空間">
+                                    </div>
+                                    <h5 class="card-title">106空間</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card text-center" 
+                                data-aos="flip-left" data-aos-duration="2000">
+                                <div class="card-body">
+                                    <div class="mask">
+                                        <div class="mask_color">
+                                            <div class="mask_text">
+                                                <h2>戶外</h2></br>市集、音樂會
+                                            </div>
+                                        </div>
+                                        <img class="card-img-top" src="/img/place_outside.jpg" alt="105空間">
+                                    </div>
+                                    <h5 class="card-title">戶外空間</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 租借說明 -->
+                <div class="tab-pane fade p-3 container" id="rent">
+                    <h2 class="intro">租借說明</h2>
+                    <div class="row">
+                        <div class="col-12">
+                            <span>租借辦法</span>
+                            <div class="pt-3">
+                                <p>
+                                於<a href="lease_apply.html">租借申請頁</a>下載租借文件表，填寫完租借表回傳 service@atstudio.com.tw，我們將會由專人直接接洽租借細節，確認合作簽定合約後，於期限內付款，借用當日予以識別證。租用完，確認無破壞，進行退還保證金簽收。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <span>街頭藝人申請</span>
+                            <div class="pt-3">
+                                <p>
+                                請先於<a href="contact_us.html">連絡我們頁面</a>提出申請並提供演出影帶審核，確認後聯絡可演出之表演者排定場地、時間，並於現場評估演出狀況。
+                                </p>
+                                <ul>
+                                    <li>演出時間：本園區開放時間10:00-18:00</li>
+                                    <li>審核基準：確認該演出者無違規事項發生，其演出之內容符合臺中放送局場地之限制(保護歷史建築為最主要目的，並勿擾亂周邊社區之環境。)</li>
+                                    <li>結案評估：專案人員將為每場、每位街頭藝人進行該場評估，以作為活動結案使用。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 費用說明 -->
+                <div class="tab-pane p-3 fade" id="fee">
+                    <h2 class="intro">費用說明</h2>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                            <button class="btn btn_collapse btn_collapse_1 btn-block text-center" 
+                                type="button" data-toggle="collapse" 
+                                data-target="#collapseOne" 
+                                aria-expanded="true" aria-controls="collapseOne">
+                                攝影規範 <i class="fas fa-angle-down"></i>
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" 
+                        aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body text-center m-4">
+                                <p>假日不提供攝影借用</br>
+                                若室內空間設有展覽，為保護著作權，將不提供攝影租用，攝錄影不需支付保證金。
+                                </p>
+                                <div class="row p-3 fee_list">
+                                    <h4 class="col-12">攝影費用表</h4>
+                                    <div class="col-12 col-lg-2 fee_col_1 pt-3"><p>一般 / 商業攝影</p></div>
+                                    <div class="col-12 col-lg-8 fee_col_1 pt-3"><p>商業、社團攝影等。(使用遮光板、燈架等專業攝影器材設備，或是Cosplay攝影)</p></div>
+                                    <div class="col-12 col-lg-2 fee_col_1 pt-3"><p>NT$250 / hr</p></div>
+                                    <!-- 方案分隔線 -->
+                                    <div class="col-12 col-lg-2 fee_col_2 pt-3"><p>商業攝錄影</p></div>
+                                    <div class="col-12 col-lg-8 fee_col_2 pt-3"><p>商業用攝錄影，如拍攝電視劇、電影等。</p></div>
+                                    <div class="col-12 col-lg-2 fee_col_2 pt-3"><p>費用另以專案計算</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn_collapse btn_collapse_2 btn-block 
+                            text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            租借規範 <i class="fas fa-angle-down"></i>
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse show" 
+                        aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body text-center m-4">
+                                <p>
+                                為維護古蹟，保證金待活動結束確認無損壞，即全數退還，若有因損壞(包含髒汙)，則從保證金扣除。
+                                </p>
+                                <div class="row p-3 fee_list">
+                                    <h4 class="col-12">105 空間</h4>
+                                    <div class="col-12 col-lg-3 fee_col_1 pt-3"><p>展演活動方案</p></div>
+                                    <div class="col-12 col-lg-3 fee_col_1 pt-3"><p>最低 14日 / 節</p></div>
+                                    <div class="col-12 col-lg-3 fee_col_1 pt-3"><p>NT$8,000 / 節</p></div>
+                                    <div class="col-12 col-lg-3 fee_col_1 pt-3"><p>保證金 NT$4,000</p></div>
+                                    <!-- 方案分隔線 -->
+                                    <div class="col-12 col-lg-3 fee_col_2 pt-3"><p>講座、手作方案</p></div>
+                                    <div class="col-12 col-lg-3 fee_col_2 pt-3"><p>最低 4小時 / 節</p></div>
+                                    <div class="col-12 col-lg-3 fee_col_2 pt-3"><p>NT$4,000 / 節</p></div>
+                                    <div class="col-12 col-lg-3 fee_col_2 pt-3"><p>保證金 NT$2,000</p></div>
+                                </div>
+                                <div class="row p-3 fee_list">
+                                    <h4 class="col-12">106 空間</h4>
+                                    <div class="col-12 col-lg-3 fee_col_1 pt-3"><p>展演活動方案</p></div>
+                                    <div class="col-12 col-lg-3 fee_col_1 pt-3"><p>最低 14日 / 節</p></div>
+                                    <div class="col-12 col-lg-3 fee_col_1 pt-3"><p>NT$12,000 / 節</p></div>
+                                    <div class="col-12 col-lg-3 fee_col_1 pt-3"><p>保證金 NT$6,000</p></div>
+                                    <!-- 方案分隔線 -->
+                                    <div class="col-12 col-lg-3 fee_col_2 pt-3"><p>講座、手作方案</p></div>
+                                    <div class="col-12 col-lg-3 fee_col_2 pt-3"><p>最低 4小時 / 節</p></div>
+                                    <div class="col-12 col-lg-3 fee_col_2 pt-3"><p>NT$5,000 / 節</p></div>
+                                    <div class="col-12 col-lg-3 fee_col_2 pt-3"><p>保證金 NT$2,500</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
 
     <!-- 回到頂部 -->
     <div class="go_top container">
@@ -92,12 +294,14 @@
             </div>
         </div>
     </footer>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
     <script type="module" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
-    <script>
-        (function($) {
+    <script type="text/javascript">
+        (function() {
             $(document).ready(function(){
             //AOS套件初始
             AOS.init();
@@ -107,8 +311,37 @@
                         scrollTop: (0)
                     }, 2000);
                 });
-            })
-    })(jQuery);
+            //小導航選項卡啟用
+            $("#rentTab li:eq(0) a").tab('show');
+            //手風琴
+            $('#collapseOne').collapse('show');
+            });
+            function closeHandler() {
+                $('.btn_collapse_1 i').addClass('fa-flip-vertical');
+                $(this).one("click", openHandler);
+            }
+            function openHandler() {
+                $('.btn_collapse_1 i').removeClass('fa-flip-vertical');
+                $(this).one("click", closeHandler);
+            }
+            $('.btn_collapse_1').one("click", closeHandler);
+
+            function closeHandler1() {
+                $('.btn_collapse_2 i').addClass('fa-flip-vertical');
+                $(this).one("click", openHandler1);
+            }
+            function openHandler1() {
+                $('.btn_collapse_2 i').removeClass('fa-flip-vertical');
+                $(this).one("click", closeHandler1);
+            }
+            $('.btn_collapse_2').one("click", closeHandler1);
+            // $('.btn_collapse').on('click',function(){
+            //     $('.btn_collapse i').addClass('fa-flip-vertical');
+            // });
+            // $('.btn_collapse').on('click',function(){
+            //         $('.btn_collapse i').removeClass('fa-flip-vertical');
+            //     });
+    })();
     </script>
 </body>
 </html>

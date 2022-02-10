@@ -17,6 +17,11 @@ $bluegreen:#A6ECE0;
 $Noto-Sans-TC: 'Noto Sans TC', sans-serif;
 $Noto-Serif-TC: 'Noto Serif TC', serif;
 body{
+    image-rendering: -moz-crisp-edges;          /* Firefox        */
+    image-rendering: -o-crisp-edges;            /* Opera          */
+    image-rendering: -webkit-optimize-contrast; /* Safari Google  */
+    image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+    -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
     ::selection {
         background: $bluegreen;
         color: $amazon;
@@ -83,11 +88,16 @@ span{
 }
 .navbar-brand{
     width: 15%;
+    transform: scale(1,1);
     @media screen and (max-width:576px) { 
         width: 50%;
     }
     @media screen and (min-width: 576px) and (max-width:1024px) { 
         width: 20%;
+    }
+    &:hover{
+        transform: scale(1.05,1.05);
+        transition: .5s;
     }
 }
 #navbarNavDropdown{
@@ -180,7 +190,7 @@ hr{
     font-family: $Noto-Sans-TC;
     text-align: left;
     color: $white;
-    font-size: 1rem;
+    font-size: .9rem;
     opacity: 1;
     @media screen and (min-width: 1024px) and (max-width:1400px) { 
         position: absolute;
@@ -594,3 +604,38 @@ input:-webkit-autofill:active  {
         opacity: 0;
         }
     }
+//collapse手風琴按鈕標頭
+.card-header{
+    h2{
+    background-color: $crayola;
+    &:hover{
+        background-color: lighten($crayola,10%);
+    }
+    }
+    .btn_collapse{
+        font-size: 1.5rem;
+        &:focus{
+            box-shadow: none !important;
+        }
+    }
+}
+//費用表格
+.fee_list{
+    text-align: center;
+    h4{
+        background-color: $gray-600;
+        color: $gray-200;
+    }
+    .fee_col_1, .fee_col_2{
+        border-bottom: 1px solid $gray-500;
+        p{
+            letter-spacing: 0px;
+        }
+    }
+    .fee_col_1{
+        background-color: $gray-200;
+    }
+    .fee_col_2{
+        background-color: $gray-300;
+    }
+}

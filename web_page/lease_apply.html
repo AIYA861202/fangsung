@@ -39,7 +39,7 @@
                         場地租借
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="fee_details.html">場地費用</a>
+                        <a class="dropdown-item" href="fee_details.html">租借資訊</a>
                         <a class="dropdown-item" href="lease_apply.html">租借申請</a>
                     </div>
                     </li>
@@ -47,7 +47,41 @@
                 </div>
         </nav>
     </header>
-
+    <section>
+        <div class="container">
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <h2>租借申請</h2>
+                <h4>apply</h4>
+                <hr>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="/img/lease_apply.doc" class="btn btn-primary mb-3" download="租借合約">
+                    下載申請表
+                </a>
+            </div>
+                <h5 class="ml-4">場地使用說明</h5>
+                <ol class="mr-4">
+                    <li>簽定租借合約後，請於期限內匯款至本單位指定帳號，否則視為放棄租借。</li>
+                    <li>本場地禁止毀損或沾污歷史建築形貌、添加附著物、黏貼雙面膠棉及地膠等破壞，佈置物亦不得遮蔽監視錄影機，未經許可不得擅自接用電力，但自行配置在建築物以外之電源設備，經電力公司檢查合格者，不在此限。</li>
+                    <li>在使用與佈置場地時，如需搬入任何外加器材及設備，應先行與管理權責單位協調後方得使用，如需張貼海報、標語、豎立旗幟等，亦應先徵得同意後，並在指定地點執行，使用結束後，自行清除乾淨，如有汙損將扣除保證金，若造成場地無法復原者，依現場毀損之狀況進行賠償。</li>
+                    <li>申請單位所支付之保證金，將使用場地清理、恢復原狀後，經專案人員清點檢查後，無息退還。若租借物品發生短少或毀損，或未依規定清理，或公共設施有毀損時，申請單位應負賠償或修復之責任，其所產生的費用應由保證金按市價扣除，若保證金不足，則由使用單位於七日內補足。</li>
+                    <li>使用本場地及相關器材，應善盡維護保管責任，並遵守本租用管理辦法，若有任何違反或損壞，應負責賠償或修復。</li>
+                    <li>園區內全面禁止吸煙、使用電子菸及製造火花(燃放鞭炮、煙火)等危險物品。</li>
+                    <li>場地使用及展場佈置範圍僅限原申請之租借區域，若需使用其他區域，請於申請時一同填寫。</li>
+                    <li>租用單位須遵守環保署噪音管制法之相關規定，戶外活動日間使用擴音設施不得超過75db、晚間（20：00～22：00）不得超過65db，違反者除應負相關法律責任外，本會得立即中斷活動進行至主辦單位完成改善為止。經館方糾正後如繼續發生同一情事，本會得終止活動，租用單位不得要求退還保證金。</li>
+                    <li>提出攝錄影之主辦單位，需於活動前14日提出申請，並於申請期間提供拍攝日期、場次、場景佈置平面圖、拍攝器材、拍攝腳本、拍攝內容用途、工作人員數量等拍攝計畫，經雙方確認費用後始得拍攝；若需搭設舞台、佈景等需事前提出，並經本園區同意，方得進行。</li>
+                    <li>本園區進行相關活動時，不開放商業及社團之平面或動態攝影之租借。</li>
+                    <li>租借期間，本園區不提供停車服務、道具與機電設備之協助。</li>
+                    <li>申請者於租借期間所辦理之活動內容不得侵犯他人著作權及違反相關法令，如有觸法者由申請者自行負責，與本單位無涉，若影響到本單位及歷史建築臺中放送局之名譽者，本單位將保留法律追訴權。</li>
+                </ol>
+                <h5 class="ml-4 mt-5">人員配置及安全管理</h5>
+                <ol class="mr-4">
+                    <li>本單位僅提供場地租借及基本電力設備，不含專業技術人員執行。申請單位之對外接待、 聯絡、引導、詢問及現場人員之管理等項事宜，應自行派員負責及製作，亦不得使用本園區之設備及電話做為聯絡方式。</li>
+                    <li>申請單位應負妥善使用及保管場地之責任，並自行負責參與活動人員之公共安全，並投保公共意外責任險，若造成公共災害，致使本園區及第三人之生命與財產有損害者，申請單位應自行負責賠償並負擔依切法律責任，概與本園區無關，並於活動開始前提出保險複本供本單位查核。</li>
+                </ol>
+        </div>
+    </section>
     <!-- 回到頂部 -->
     <div class="go_top container">
         <i class="fas fa-chevron-up col-md-12"></i>
@@ -92,12 +126,13 @@
             </div>
         </div>
     </footer>
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
     <script type="module" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
     <script>
-        (function($) {
+        (function() {
             $(document).ready(function(){
             //AOS套件初始
             AOS.init();
@@ -108,7 +143,7 @@
                     }, 2000);
                 });
             })
-    })(jQuery);
+    })();
     </script>
 </body>
 </html>

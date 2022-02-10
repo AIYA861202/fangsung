@@ -56,7 +56,7 @@
                 <hr>
             </div>
         </div>
-        <form class="needs-validation" novalidate>
+        <form method="POST" onsubmit="return check()">
             <div class="form-row justify-content-center">
                 <div class="form-group col-sm-4 mx-3">
                     <p><label class="col-form-label">
@@ -85,10 +85,10 @@
                     </label></p>
                     <div class="sel sel_floor">
                         <select name="select-profession" id="select-profession" required>
-                            <option disabled>請選擇種類</option>
-                            <option>建議或問題</option>
-                            <option>申請市集攤位</option>
-                            <option>街頭表演相關</option>
+                            <option disabled value="請選擇種類">請選擇種類</option>
+                            <option value="建議或問題">建議或問題</option>
+                            <option value="申請市集攤位">申請市集攤位</option>
+                            <option value="街頭表演相關">街頭表演相關</option>
                         </select>
                     </div>
                 </div>
@@ -127,9 +127,8 @@
                         placeholder="我想說..." required></textarea>
                 </div>
             </div>
-            
             <div class="form-group row justify-content-center">
-                <p><button class="btn btn-primary" type="submit">送出</button></p>
+                <input class="btn btn-primary" value="送出" type="submit">
             </div>
         </form>
     </section>
@@ -183,7 +182,7 @@
     <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
-    (function($) {
+    (function() {
         $(document).ready(function(){
             //AOS套件初始
             AOS.init();
@@ -238,8 +237,32 @@
             $currentSel.children('.sel__placeholder').text(txt);
             $currentSel.children('select').prop('selectedIndex', index + 1);
             });
+            
+            //表單驗證
+            let info = $('select option:selected').text();
+
+            $('form').submit(function( event ) {
+                
+                if(placeholder === "請選擇種類"){
+                    alert('請選擇內容種類！');
+                    event.preventDefault();
+                }else{
+                    alert('提交成功！');
+                    return;
+                    };
+            });
+
+            // function check(){
+            //     if(info === "請選擇種類"){
+            //         alert('請選擇內容種類！')
+            //         return false;
+            //     }else{
+            //         return true; 
+            //         };
+            // };
+
         });
-    })(jQuery);
+    })();
     </script>
 </body>
 </html>

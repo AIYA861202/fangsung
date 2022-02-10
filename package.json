@@ -19,6 +19,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "validate.js": "^0.13.1"
   }
 }

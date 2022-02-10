@@ -454,12 +454,16 @@
     <script src="https://kit.fontawesome.com/a0640d73c3.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
     //JQ動畫
-    (function($) {
+    (function() {
         $(document).ready(function(){
         //AOS套件初始
         AOS.init();
         //tooltip工具提示啟用
-        $('#btn_1935').tooltip('show');
+        let clickedNotify = false;
+        let tooltip_on = $('#btn_1935');
+        tooltip_on.tooltip({placement: 'top'}).tooltip('show');
+        tooltip_on.mouseleave(function() { if (!clickedNotify) { $('#btn_1935').tooltip({placement: 'top'}).tooltip('show'); } });
+        tooltip_on.click(function() { clickedNotify = true; $(this).tooltip('hide'); });
         //回到頁首
         $('.go_top').on('click',function(){
                 $('html, body').animate({
@@ -732,7 +736,7 @@
                 ).css({'display':'none'});
             });
         });
-    })(jQuery);
+    })();
     </script>
     </body>
 </html>
