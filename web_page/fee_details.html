@@ -318,23 +318,23 @@
             });
             function closeHandler() {
                 $('.btn_collapse_1 i').addClass('fa-flip-vertical');
-                $(this).one("click", openHandler);
+                $(this).on("click", openHandler);
             }
             function openHandler() {
                 $('.btn_collapse_1 i').removeClass('fa-flip-vertical');
-                $(this).one("click", closeHandler);
+                $(this).on("click", closeHandler);
             }
-            $('.btn_collapse_1').one("click", closeHandler);
+            $('.btn_collapse_1').on("click", closeHandler);
 
             function closeHandler1() {
                 $('.btn_collapse_2 i').addClass('fa-flip-vertical');
-                $(this).one("click", openHandler1);
+                $(this).on("click", openHandler1);
             }
             function openHandler1() {
                 $('.btn_collapse_2 i').removeClass('fa-flip-vertical');
-                $(this).one("click", closeHandler1);
+                $(this).on("click", closeHandler1);
             }
-            $('.btn_collapse_2').one("click", closeHandler1);
+            $('.btn_collapse_2').on("click", closeHandler1);
             // $('.btn_collapse').on('click',function(){
             //     $('.btn_collapse i').addClass('fa-flip-vertical');
             // });
