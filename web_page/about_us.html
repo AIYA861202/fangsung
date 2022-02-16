@@ -459,18 +459,18 @@
         $(document).ready(function(){
         //AOS套件初始
         AOS.init();
+        //回到頁首
+        $('.go_top').on('click',function(){
+                    $('html, body').animate({
+                        scrollTop: (0)
+                    }, 2000);
+                });
         //tooltip工具提示啟用
         let clickedNotify = false;
         let tooltip_on = $('#btn_1935');
         tooltip_on.tooltip({placement: 'top'}).tooltip('show');
         tooltip_on.mouseleave(function() { if (!clickedNotify) { $('#btn_1935').tooltip({placement: 'top'}).tooltip('show'); } });
         tooltip_on.click(function() { clickedNotify = true; $(this).tooltip('hide'); });
-        //回到頁首
-        $('.go_top').on('click',function(){
-                $('html, body').animate({
-                    scrollTop: (0)
-                }, 2000);
-            });
             //點選年表出現與隱藏歷史事件
             $('#btn_1935').on('click',function(){
                 //年表按鈕樣式
